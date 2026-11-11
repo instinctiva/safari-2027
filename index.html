@@ -1,0 +1,1475 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Safari conscient · Afrique du Sud 2027 · Instinctiva</title>
+<meta name="description" content="Dix jours dans le Greater Kruger, du 31 mai au 9 juin 2027, en petit groupe de sept personnes accompagnées par Léa Gutierrez. Marches en brousse, éléphants de HERD, vautours du Cap, rives de l'Olifants.">
+<meta property="og:title" content="Safari conscient · Afrique du Sud · 31 mai au 9 juin 2027">
+<meta property="og:description" content="Ce que le quotidien a endormi, le sauvage le réveille. Sept places, un petit groupe, Léa à tes côtés du premier au dernier jour.">
+<!-- Image de partage : à la mise en ligne, remplacer par l'adresse complète (https://…/images/partage.jpg) -->
+<meta property="og:image" content="https://instinctiva.github.io/safari-2027/images/partage.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="images/logo-elephant.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/hero-lea-rhinoceros-mobile.webp" media="(max-width: 760px)">
+<link rel="preload" as="image" href="images/hero-lea-rhinoceros.webp" media="(min-width: 761px)">
+
+<style>
+/* TAN - GARDENIA : déposer les fichiers dans fonts/ et ils seront utilisés automatiquement.
+   En leur absence, la page retombe sur Cormorant Garamond. */
+@font-face{font-family:"TAN Gardenia";src:local("TAN - GARDENIA"),local("TAN-GARDENIA"),url("fonts/TAN-GARDENIA.woff2") format("woff2"),url("fonts/TAN-GARDENIA.otf") format("opentype");font-display:swap}
+
+:root{
+  --terre:#a0522d; --sable:#e8c89a; --ivoire:#f2e8da; --ocre:#c4864a; --ebene:#3d2415;
+  --blanc:#ffffff; --encre:#2a1a10; --encre-doux:#5b4636; --filet:#e2d3bf;
+  --titre:"TAN Gardenia","Cormorant Garamond",Georgia,serif;
+  --texte:"Raleway",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --max:1120px; --lecture:680px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--blanc);color:var(--encre);font-family:var(--texte);font-size:17px;line-height:1.7}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--terre)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.lecture{max-width:var(--lecture)}
+section{padding:88px 0}
+.ivoire{background:var(--ivoire)}
+.nuit{background:var(--ebene);color:var(--ivoire)}
+.nuit a{color:var(--sable)}
+h1,h2,h3{font-family:var(--titre);font-weight:600;line-height:1.12;margin:0 0 .5em;letter-spacing:.005em}
+h2{font-size:clamp(2rem,4.6vw,3.1rem);color:var(--ebene)}
+.nuit h2,.nuit h3{color:var(--ivoire)}
+h3{font-size:1.65rem;color:var(--ebene)}
+p{margin:0 0 1.1em}
+.surtitre{font-family:var(--texte);font-size:.78rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--terre);margin:0 0 14px}
+.nuit .surtitre{color:var(--sable)}
+.chapo{font-size:1.15rem;color:var(--encre-doux)}
+.nuit .chapo{color:#e9dccb}
+strong{font-weight:700}
+
+/* Boutons */
+.btn{display:inline-block;background:var(--terre);color:var(--blanc);text-decoration:none;font-weight:700;font-size:1rem;letter-spacing:.02em;padding:17px 30px;border-radius:999px;border:2px solid var(--terre);text-align:center;transition:background .2s,color .2s}
+.btn:hover,.btn:focus-visible{background:var(--ebene);border-color:var(--ebene)}
+.nuit .btn:hover,.nuit .btn:focus-visible,.hero .btn:hover{background:var(--ivoire);color:var(--ebene);border-color:var(--ivoire)}
+.btn-ghost{background:transparent;color:var(--blanc);border-color:rgba(255,255,255,.8)}
+.lien{font-size:.82rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--terre);border-bottom:1px solid currentColor;padding-bottom:3px}
+.cta-bloc{margin-top:40px;display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center}
+.cta-note{font-size:.92rem;color:var(--encre-doux);margin:0}
+.nuit .cta-note{color:#d9c8b3}
+:focus-visible{outline:3px solid var(--ocre);outline-offset:3px}
+
+[hidden]{display:none!important}
+/* Repères à fournir */
+.todo{display:inline-block;background:#fff3c4;color:#5a3b00;border:1px dashed #b88a00;border-radius:4px;padding:1px 7px;font:600 .78rem/1.5 var(--texte);letter-spacing:0;text-transform:none}
+
+/* HÉROS */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:var(--blanc);overflow:hidden;background:var(--ebene)}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:rgba(28,16,8,.42)}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-top:110px;padding-bottom:56px}
+.marque{position:absolute;top:22px;left:20px;z-index:3;display:flex;align-items:center;gap:10px;color:var(--blanc);text-decoration:none;font-weight:700;letter-spacing:.24em;font-size:.78rem;text-transform:uppercase}
+.logo{display:inline-block;width:30px;height:34px;background:currentColor;-webkit-mask:url(images/logo-elephant.png) center/contain no-repeat;mask:url(images/logo-elephant.png) center/contain no-repeat}
+.hero .surtitre{color:var(--sable)}
+.hero h1{font-size:clamp(2.5rem,7.4vw,5.2rem);max-width:15ch;margin-bottom:.35em;color:var(--blanc)}
+.hero .chapo{color:#f4ebdf;max-width:36rem;font-size:1.14rem}
+.places{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);padding:8px 16px;border-radius:999px;font-weight:600;font-size:.95rem;margin:4px 0 26px}
+.places .point{width:9px;height:9px;border-radius:50%;background:var(--sable)}
+.hero .cta-bloc{margin-top:0}
+.hero .cta-note{color:#eadfce}
+.faits{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:46px;border-top:1px solid rgba(255,255,255,.3)}
+.faits div{padding:16px 16px 0 0;font-size:.9rem;color:#efe4d6}
+.faits b{display:block;font-family:var(--titre);font-size:1.45rem;font-weight:600;color:var(--blanc);line-height:1.2}
+
+/* Texte + image */
+.duo{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.duo.inverse .duo-media{order:-1}
+.duo-media img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px}
+.citation{margin:34px 0 0;padding:0 0 0 22px;border-left:2px solid var(--terre);font-family:var(--titre);font-style:italic;font-size:1.45rem;line-height:1.35;color:var(--ebene)}
+.nuit .citation{border-color:var(--sable);color:var(--ivoire)}
+.citation cite{display:block;margin-top:10px;font:600 .82rem/1.4 var(--texte);font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:var(--terre)}
+.nuit .citation cite{color:var(--sable)}
+
+/* Pour toi si */
+.deux-col{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:40px}
+.liste{list-style:none;margin:0;padding:0}
+.liste li{position:relative;padding:14px 0 14px 34px;border-top:1px solid var(--filet)}
+.liste li:last-child{border-bottom:1px solid var(--filet)}
+.liste li::before{content:"";position:absolute;left:4px;top:25px;width:12px;height:2px;background:var(--terre)}
+.liste.coche li::before{width:9px;height:15px;top:19px;left:6px;background:none;border:solid var(--terre);border-width:0 2px 2px 0;transform:rotate(40deg)}
+.col-titre{font-family:var(--texte);font-size:.82rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ebene);margin:0 0 12px}
+
+/* Moments */
+.moments{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:48px}
+.moment{background:var(--blanc);border:1px solid var(--filet);border-radius:4px;overflow:hidden;display:flex;flex-direction:column}
+.moment img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.moment .corps{padding:24px 26px 28px}
+.moment .lieu{font-size:.76rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--terre);margin-bottom:8px}
+.moment h3{margin-bottom:.4em}
+.moment p{margin:0;color:var(--encre-doux)}
+.moment.feu{grid-column:1/-1;background:var(--ebene);border-color:var(--ebene);color:var(--ivoire);flex-direction:row}
+.moment.feu img{width:46%;aspect-ratio:auto;min-height:300px}
+.moment.feu .corps{align-self:center;padding:36px 40px}
+.moment.feu h3{color:var(--ivoire)}
+.moment.feu p{color:#e6d8c6}
+.moment.feu .lieu{color:var(--sable)}
+.compagnons{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:56px}
+.compagnon{border-top:2px solid var(--terre);padding-top:20px}
+.compagnon h3{font-size:1.45rem}
+.compagnon p{color:var(--encre-doux);margin:0}
+.bonus{margin-top:48px;background:var(--blanc);border:1px solid var(--terre);border-radius:4px;padding:28px 30px;display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center}
+.bonus .badge{font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;background:var(--terre);color:var(--blanc);padding:8px 14px;border-radius:999px;white-space:nowrap}
+.bonus p{margin:0}
+
+/* Journée */
+.journee{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.journee img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px;position:sticky;top:30px}
+.temps{list-style:none;margin:28px 0 0;padding:0}
+.temps li{display:grid;grid-template-columns:86px 1fr;gap:18px;padding:18px 0;border-top:1px solid rgba(242,232,218,.18)}
+.temps .h{font-family:var(--titre);font-size:1.5rem;color:var(--sable);line-height:1.2}
+.temps p{margin:0;color:#e6d8c6}
+
+/* Frise */
+.frise{list-style:none;margin:44px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:1px solid var(--filet)}
+.frise li{padding:22px 18px 24px 0;border-bottom:1px solid var(--filet)}
+.frise .j{font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--terre)}
+.frise .d{font-family:var(--titre);font-size:1.4rem;color:var(--ebene);line-height:1.2;margin:4px 0 8px}
+.frise p{margin:0;font-size:.93rem;color:var(--encre-doux);line-height:1.55}
+.frise .etape{grid-column:1/-1;padding:14px 0 6px;border-bottom:0;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ebene)}
+.mention{font-size:.88rem;color:var(--encre-doux);font-style:italic;margin-top:18px}
+
+/* Lieux */
+.lieu-bloc{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;margin-top:64px}
+.lieu-bloc:nth-of-type(even) .lieu-media{order:2}
+.lieu-media img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;display:block}
+.lieu-bloc .dates{font-size:.76rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--terre)}
+.lieu-bloc h3{font-size:clamp(1.7rem,3vw,2.2rem);margin-top:6px}
+.lieu-bloc p{color:var(--encre-doux)}
+.pastilles{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;padding:0;list-style:none}
+.pastilles li{font-size:.84rem;border:1px solid var(--filet);background:var(--blanc);border-radius:999px;padding:5px 13px;color:var(--ebene)}
+
+.vignettes{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:6px;margin-top:6px}
+.vignettes img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:3px}
+
+/* Galeries des lieux */
+.ouvre{display:block;position:relative;padding:0;border:0;background:none;cursor:zoom-in;width:100%;border-radius:4px;overflow:hidden}
+.ouvre img{transition:transform .5s ease}
+.ouvre:hover img,.ouvre:focus-visible img{transform:scale(1.03)}
+.lieu-media .principale img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:0}
+.compteur{position:absolute;right:12px;bottom:12px;background:rgba(28,16,8,.72);color:var(--ivoire);font:600 .8rem/1 var(--texte);letter-spacing:.06em;padding:9px 13px;border-radius:999px}
+.vignettes .ouvre{border-radius:3px}
+.vignettes .ouvre img{border-radius:0}
+.plus{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(28,16,8,.58);color:var(--blanc);font:700 .95rem/1 var(--texte);letter-spacing:.04em}
+.visionneuse{border:0;padding:0;margin:0;max-width:none;max-height:none;width:100vw;height:100dvh;background:rgba(20,11,5,.96);color:var(--ivoire)}
+.visionneuse::backdrop{background:rgba(20,11,5,.96)}
+.visionneuse[open]{display:flex;flex-direction:column}
+.v-haut{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;font-size:.85rem;letter-spacing:.08em}
+.v-scene{flex:1;display:flex;align-items:center;justify-content:center;position:relative;min-height:0;padding:0 64px;touch-action:pan-y}
+.v-scene img{max-width:100%;max-height:100%;object-fit:contain;border-radius:3px}
+.v-legende{text-align:center;padding:14px 20px 22px;font-size:.92rem;color:#e6d8c6;min-height:3.2em}
+.v-btn{background:rgba(242,232,218,.12);color:var(--ivoire);border:0;border-radius:50%;width:46px;height:46px;font-size:1.4rem;line-height:1;cursor:pointer}
+.v-btn:hover,.v-btn:focus-visible{background:rgba(242,232,218,.25)}
+.v-prec,.v-suiv{position:absolute;top:50%;transform:translateY(-50%)}
+.v-prec{left:10px}.v-suiv{right:10px}
+@media (max-width:560px){.v-scene{padding:0 6px}.v-prec,.v-suiv{top:auto;bottom:-58px;transform:none}.v-prec{left:calc(50% - 60px)}.v-suiv{right:calc(50% - 60px)}.v-legende{padding-top:70px}}
+
+/* Galerie */
+.galerie{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.galerie img{width:100%;aspect-ratio:2/3;object-fit:cover}
+
+/* Guides */
+.equipe{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:56px;padding-top:40px;border-top:1px solid var(--filet)}
+.equipe h3{font-size:1.45rem}
+.equipe p{color:var(--encre-doux);margin:0}
+.reperes{display:flex;flex-wrap:wrap;gap:10px 28px;margin:24px 0 8px;padding:0;list-style:none}
+.reperes li{font-size:.95rem;color:var(--encre-doux)}
+.reperes b{font-family:var(--titre);font-size:1.5rem;font-weight:600;color:var(--terre);margin-right:6px}
+
+.equipe-photo{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:4px;margin-bottom:18px}
+
+/* Témoignages */
+.defile{margin:36px 0 0;font-size:.82rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--sable)}
+.temoins{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:18px 2px 22px;margin-top:4px;scrollbar-color:rgba(242,232,218,.35) transparent}
+.temoin{flex:0 0 min(300px,80%);scroll-snap-align:start;margin:0;border:1px solid rgba(242,232,218,.22);border-radius:4px;padding:16px 16px 22px;display:flex;flex-direction:column}
+.temoin blockquote{margin:18px 0 0;font-family:var(--titre);font-style:italic;font-size:1.22rem;line-height:1.38;color:var(--ivoire)}
+.temoin blockquote p{margin:0 0 .6em}
+.temoin .qui{margin:auto 0 0;padding-top:10px;font-size:.82rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--sable)}
+.temoin .ctx{font-size:.88rem;color:#cbb9a3;margin:4px 0 0}
+.video{aspect-ratio:9/16;background:#2c190d;border-radius:4px;overflow:hidden}
+.video iframe{width:100%;height:100%;border:0;display:block}
+/* Avis Google */
+.avis-google{margin-top:48px;margin-bottom:8px}
+.avis-titre{font-size:.82rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--terre);margin:0 0 16px}
+.avis-titre span{letter-spacing:.1em;color:#f5b82e;margin-left:6px}
+.avis-grille{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:start}
+.avis-grille img{width:100%;height:auto;border-radius:8px;background:#fff;border:1px solid var(--filet)}
+@media (max-width:900px){.avis-grille{grid-template-columns:1fr;max-width:520px}}
+@media print{.avis-grille{grid-template-columns:repeat(3,1fr)}.avis-google{break-inside:avoid;margin-top:8mm}}
+
+/* Conversion : inscrites, bonus, échéancier, WhatsApp */
+.inscrites{margin:-14px 0 24px;font-size:.92rem;color:#efe4d6}
+.bonus+.bonus{margin-top:16px}
+.bonus-tot{border-color:var(--ocre);background:#fffaf2}
+.bonus-tot .badge{background:var(--ebene)}
+.echeance{margin:10px 0 0;font-size:.9rem;color:var(--encre-doux)}
+.wa{display:inline-flex;align-items:center;gap:8px;color:var(--terre);font-weight:600;text-decoration:none;border-bottom:1px solid currentColor;padding:10px 0 4px}
+.wa-ico{width:20px;height:20px;flex:none;color:#25a35a}
+.wa-clair{color:#f4ebdf;margin-top:18px}
+.wa-clair .wa-ico{color:#7fdc9f}
+.faq-wa{margin-top:28px;color:var(--encre-doux)}
+.btn-wa{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:transparent;color:var(--ivoire);border-color:rgba(242,232,218,.7)}
+.btn-wa .wa-ico{color:#7fdc9f}
+.consentement{position:fixed;left:12px;right:12px;bottom:84px;z-index:60;max-width:560px;margin:0 auto;background:var(--blanc);color:var(--encre);border:1px solid var(--filet);border-radius:8px;padding:16px 18px;font-size:.9rem;box-shadow:0 8px 30px rgba(0,0,0,.15)}
+.consentement p{margin:0 0 10px}
+.consentement button{font:600 .9rem var(--texte);border-radius:999px;padding:9px 18px;margin-right:8px;cursor:pointer;border:1px solid var(--terre);background:var(--terre);color:#fff}
+.consentement button+button{background:transparent;color:var(--terre)}
+@media (min-width:901px){.consentement{bottom:20px}}
+@media print{.wa,.btn-wa,.faq-wa,.consentement{display:none!important}}
+
+/* Ce que tu ramènes */
+.ramenes{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:44px}
+.ramene{border-top:1px solid rgba(242,232,218,.3);padding-top:20px;display:flex;flex-direction:column}
+.ramene h3{font-size:1.45rem;color:var(--ivoire)}
+.ramene p{color:#e6d8c6;margin:0 0 16px}
+.ramene-cit{margin:auto 0 0;font-family:var(--titre);font-style:italic;font-size:1.15rem;line-height:1.35;color:var(--sable)}
+.ramene-cit cite{display:block;margin-top:6px;font:600 .74rem/1.4 var(--texte);font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:#cbb9a3}
+.ramenes-fin{margin:44px 0 0;max-width:640px;font-family:var(--titre);font-size:1.35rem;line-height:1.4;color:var(--ivoire)}
+@media (max-width:900px){.ramenes{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.ramenes{grid-template-columns:1fr;gap:22px}}
+@media print{#ramenes{break-before:page}.ramenes{grid-template-columns:repeat(3,1fr);gap:6mm}.ramene{border-color:var(--filet);break-inside:avoid}.ramene h3{color:var(--ebene)}.ramene p{color:var(--encre-doux)}.ramene-cit{color:var(--terre)}.ramene-cit cite{color:var(--encre-doux)}.ramenes-fin{color:var(--ebene)}}
+/* Carte de l'itinéraire */
+.carte{margin:40px 0 8px}
+.carte svg{width:100%;height:auto;display:block;border-radius:10px}
+.carte figcaption{font-size:.85rem;color:var(--encre-doux);font-style:italic;margin-top:10px}
+.c-zone{font:600 16px var(--texte);letter-spacing:.14em;text-transform:uppercase;fill:#8a5a32}
+.c-riv{font:italic 20px var(--titre);fill:#5f8583;paint-order:stroke;stroke:#f2e8da;stroke-width:4px}
+.c-lbl{font:500 21px var(--texte);fill:#3d2415;paint-order:stroke;stroke:#f2e8da;stroke-width:5px;stroke-linejoin:round}
+.c-fort{font-weight:700}
+.c-route{fill:none;stroke:#a0522d;stroke-width:3;stroke-dasharray:2 8;stroke-linecap:round}
+.c-visite{fill:none;stroke:#a0522d;stroke-width:1.5;stroke-dasharray:4 5;opacity:.7}
+.c-pt-visite{fill:#f2e8da;stroke:#a0522d;stroke-width:2.5}
+.c-etape circle{fill:#a0522d;stroke:#f2e8da;stroke-width:3}
+.c-etape text{font:700 16px var(--texte);fill:#fff;text-anchor:middle}
+@media (max-width:560px){.carte{margin:28px -6px 4px}}
+@media print{.carte{break-inside:avoid;max-width:150mm}}
+
+/* FAQ */
+.faq{margin-top:40px;border-top:1px solid var(--filet)}
+.faq details{border-bottom:1px solid var(--filet)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 44px 22px 0;position:relative;font-weight:600;font-size:1.08rem;color:var(--ebene)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:8px;top:30px;width:10px;height:10px;border:solid var(--terre);border-width:0 2px 2px 0;transform:rotate(45deg);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(-135deg);top:34px}
+.faq .rep{padding:0 0 22px;color:var(--encre-doux)}
+.faq .rep p:last-child{margin-bottom:0}
+.faq .rep .citation{font-size:1.2rem;margin-top:16px}
+
+/* Prix */
+.valeur{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:40px 0 0;padding:0;list-style:none;border-top:1px solid var(--filet)}
+.valeur li{padding:16px 18px 16px 0;border-bottom:1px solid var(--filet);font-size:.96rem;color:var(--encre-doux)}
+.formules{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
+.formule{background:var(--blanc);border:1px solid var(--filet);border-radius:4px;padding:32px 30px}
+.formule.vedette{border:2px solid var(--terre)}
+.formule .nom{font-size:.8rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--terre)}
+.formule .montant{font-family:var(--titre);font-size:2.7rem;font-weight:600;color:var(--ebene);line-height:1.1;margin:10px 0 2px}
+.formule .eur{font-size:1.05rem;color:var(--ebene);font-weight:600}
+.formule .detail{margin:16px 0 0;font-size:.95rem;color:var(--encre-doux)}
+.formule .reste{margin-top:14px;font-size:.88rem;font-weight:600;color:var(--terre)}
+.taux{font-size:.86rem;color:var(--encre-doux);margin-top:14px}
+.paiement{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.paiement > div{border-top:2px solid var(--terre);padding-top:16px}
+.paiement h3{font-size:1.3rem;margin-bottom:.35em}
+.paiement p{margin:0;font-size:.96rem;color:var(--encre-doux)}
+.encart{margin-top:28px;background:var(--blanc);border:1px solid var(--filet);border-radius:4px;padding:24px 26px}
+.encart h3{font-size:1.3rem}
+.encart ol{margin:6px 0 0;padding-left:20px;color:var(--encre-doux)}
+.encart li{margin:4px 0}
+.inclus{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;margin-top:56px}
+.inclus ul{list-style:none;margin:0;padding:0}
+.inclus li{position:relative;padding:8px 0 8px 28px;font-size:.96rem;color:var(--encre-doux);border-bottom:1px solid var(--filet)}
+.inclus .oui li::before{content:"";position:absolute;left:4px;top:13px;width:7px;height:12px;border:solid var(--terre);border-width:0 2px 2px 0;transform:rotate(40deg)}
+.inclus .non li::before{content:"";position:absolute;left:2px;top:19px;width:12px;height:2px;background:var(--encre-doux)}
+.budget{margin-top:40px;padding:26px 0;border-top:1px solid var(--ebene);border-bottom:1px solid var(--ebene);display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.budget p{margin:0;color:var(--encre-doux);font-size:.96rem}
+.budget .total{font-family:var(--titre);font-size:2.3rem;color:var(--ebene);white-space:nowrap}
+
+/* Étapes */
+.etapes{list-style:none;margin:44px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:e}
+.etapes li{counter-increment:e;border-top:1px solid rgba(242,232,218,.3);padding-top:18px}
+.etapes li::before{content:"Étape " counter(e);display:block;font-size:.76rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--sable);margin-bottom:6px}
+.etapes h3{font-size:1.4rem}
+.etapes p{margin:0;color:#e6d8c6;font-size:.96rem}
+.lettre{margin-top:72px;display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.lettre img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px}
+.lettre p{color:#efe3d3;font-size:1.06rem}
+.signature{font-family:var(--titre);font-style:italic;font-size:1.7rem;color:var(--sable)}
+.brochure{margin-top:56px;padding-top:36px;border-top:1px solid rgba(242,232,218,.22)}
+.brochure h3{font-size:1.5rem}
+
+footer{background:#2c190d;color:#cdbba6;padding:40px 0 110px;font-size:.88rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between;align-items:center}
+footer .marque-pied{display:flex;align-items:center;gap:10px;color:var(--ivoire);font-weight:700;letter-spacing:.22em;text-transform:uppercase;font-size:.78rem}
+
+/* Bouton collant mobile */
+.collant{position:fixed;left:12px;right:12px;bottom:12px;z-index:50;display:none;align-items:center;justify-content:space-between;gap:12px;background:var(--ebene);color:var(--ivoire);border-radius:999px;padding:8px 8px 8px 20px;transform:translateY(130%);transition:transform .3s}
+.collant.visible{transform:none}
+.collant span{font-size:.86rem;font-weight:600}
+.collant .btn{padding:12px 20px;font-size:.92rem}
+
+/* Apparition douce */
+.revele{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+.revele.vu{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.revele{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* Mobile */
+@media (max-width:900px){
+  section{padding:64px 0}
+  .duo,.deux-col,.journee,.lieu-bloc,.lettre,.inclus,.equipe{grid-template-columns:1fr;gap:32px}
+  .duo.inverse .duo-media,.lieu-bloc:nth-of-type(even) .lieu-media{order:0}
+  .duo-media img{aspect-ratio:4/3}
+  .journee img{position:static;aspect-ratio:4/3}
+  .moments,.compagnons,.formules{grid-template-columns:1fr}
+  .moment.feu{flex-direction:column}
+  .moment.feu img{width:100%;min-height:0;aspect-ratio:3/2}
+  .moment.feu .corps{padding:24px 26px 28px}
+  .frise{grid-template-columns:1fr 1fr}
+  .valeur{grid-template-columns:1fr 1fr}
+  .paiement,.etapes{grid-template-columns:1fr}
+  .galerie{grid-template-columns:repeat(2,1fr)}
+  .collant{display:flex}
+  .hero picture img{object-position:24% 40%}
+  .lettre img{aspect-ratio:4/3}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .faits{grid-template-columns:1fr 1fr;row-gap:6px}
+  .frise,.valeur{grid-template-columns:1fr}
+  .frise li{padding-right:0}
+  .bonus{grid-template-columns:1fr;gap:14px}
+  .bonus .badge{justify-self:start}
+  .budget{grid-template-columns:1fr}
+  .btn{width:100%}
+  .hero .btn-ghost{display:none}
+  .temps li{grid-template-columns:70px 1fr;gap:12px}
+  /* Programme : une ligne compacte par jour (date à gauche, texte à droite) */
+  .frise li:not(.etape){display:grid;grid-template-columns:92px 1fr;column-gap:14px;padding:14px 0}
+  .frise li:not(.etape) .j{grid-column:1;grid-row:1}
+  .frise li:not(.etape) .d{grid-column:1;grid-row:2;font-size:1.15rem;margin:2px 0 0}
+  .frise li:not(.etape) p:last-child{grid-column:2;grid-row:1/3;align-self:center}
+  /* Avis Google : carrousel horizontal, comme les vidéos */
+  .avis-grille{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;max-width:none;padding-bottom:10px}
+  .avis-grille .avis-zoom{flex:0 0 86%;scroll-snap-align:start}
+}
+.defile-avis{display:none;margin:-6px 0 10px;color:var(--terre)}
+@media (max-width:560px){.defile-avis{display:block}}
+@media print{.defile-avis{display:none!important}}
+/* Barre collante : « 5 places sur 7 » sur une seule ligne */
+.collant span{white-space:nowrap}
+@media (max-width:360px){.collant span{font-size:.78rem}.collant .btn{padding:12px 16px}}
+/* Lien de la brochure : zone de clic confortable au doigt */
+[data-brochure]{display:inline-block;padding:12px 0}
+.avis-zoom{border-radius:8px;background:#fff}
+.avis-zoom img{border-radius:8px}
+.v-scene img{background:#fff}
+
+/* ===== Brochure PDF (impression) ===== */
+.print-only{display:none}
+@page{size:A4;margin:16mm 0 14mm}
+@page :first{margin:0}
+@media print{
+  html,body{background:#fff}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{font-size:10.5pt;line-height:1.55}
+  .print-only{display:block}
+  .collant,.visionneuse,.defile,.btn,.cta-bloc .btn,[data-appel-manquant],.btn-ghost,.compteur,.plus,.video,.marque,[data-brochure],.brochure,.revele.vu{animation:none}
+  .collant,.visionneuse,.defile,.btn,[data-appel-manquant],.compteur,.plus,.video,.brochure,.todo{display:none!important}
+  .revele{opacity:1!important;transform:none!important}
+  .wrap{padding:0 16mm;max-width:none}
+  section{padding:0 0 10mm;break-before:page}
+  section.nuit,section.ivoire{padding-top:0;padding-bottom:10mm;background:#fff}
+  .nuit{color:var(--encre)}
+  .nuit h2,.nuit h3,.moment.feu h3{color:var(--ebene)}
+  .nuit .surtitre,.nuit .citation cite,.temoin .qui,.temps .h,.avis-titre,.moment.feu .lieu,.etapes li::before,.signature{color:var(--terre)}
+  .nuit .chapo,.nuit .cta-note,.temps p,.etapes p,.temoin .ctx,.lettre p,.moment.feu p{color:var(--encre-doux)}
+  .temps li,.etapes li,.temoin{border-color:var(--filet)}
+  .temoin blockquote,.nuit .citation{color:var(--ebene)}
+  .moment.feu{background:var(--ivoire);border-color:var(--filet);color:var(--encre)}
+  .qr-video{color:var(--terre)}
+  .nuit .qr-appel{border-color:var(--terre)}
+  .ivoire{background:#fff}
+  footer{background:#fff;color:var(--encre-doux)}
+  footer .marque-pied{color:var(--ebene)}
+  h2{font-size:24pt;break-after:avoid}
+  h3{font-size:15pt;break-after:avoid}
+  .chapo{font-size:11.5pt}
+  .surtitre{font-size:7.5pt}
+  /* Couverture */
+  .hero{min-height:297mm;height:297mm;break-after:page}
+  .hero .wrap{padding:0 16mm 18mm}
+  .hero h1{font-size:40pt}
+  .hero .cta-bloc{display:none}
+  .faits{margin-top:10mm}
+  /* Mises en page */
+  .duo,.journee,.lettre{grid-template-columns:1fr 1fr;gap:10mm;align-items:start}
+  .duo-media img,.lettre img,.journee img{aspect-ratio:4/5;position:static}
+  .deux-col{gap:10mm;margin-top:6mm}
+  .moments{grid-template-columns:1fr 1fr;gap:6mm;margin-top:8mm}
+  .moment,.lieu-bloc,.temoin,.formule,.compagnon,.bonus,.encart,.paiement>div,.etapes li,.temps li,.frise li,.faq details,.equipe>div,.valeur li,.budget,.qr-appel,.planche{break-inside:avoid}
+  .moment img{aspect-ratio:16/9}
+  .moment.feu{flex-direction:row}
+  .moment.feu img{width:45%;min-height:0}
+  .lieu-bloc{grid-template-columns:1fr 1fr;gap:8mm;margin-top:10mm}
+  .lieu-bloc:nth-of-type(even) .lieu-media{order:0}
+  .ouvre{cursor:default}
+  .galerie{display:none}
+  .frise{grid-template-columns:repeat(5,1fr)}
+  .temoins{display:grid;grid-template-columns:1fr 1fr;overflow:visible;gap:6mm;padding:0}
+  .temoin{flex:none;padding:5mm}
+  .temoin blockquote{margin-top:0;font-size:12.5pt}
+  .qr-video{display:flex;align-items:center;gap:4mm;margin-top:4mm;color:var(--sable);font-size:9pt;text-decoration:none}
+  .qr-video img{width:22mm;height:22mm;background:#fff;padding:1.5mm;border-radius:2px}
+  .photo-groupe{max-width:90mm;margin-top:6mm}
+  .faq details{border-bottom:1px solid var(--filet)}
+  .faq summary::after{display:none}
+  .faq summary{padding:10px 0 4px}
+  .faq .rep{padding-bottom:10px}
+  .formules{gap:6mm}
+  .inclus{grid-template-columns:1.3fr 1fr;gap:8mm}
+  .paiement{grid-template-columns:repeat(3,1fr)}
+  .etapes{grid-template-columns:repeat(3,1fr)}
+  .qr-appel{display:flex;align-items:center;gap:6mm;margin:8mm 0 0;padding:6mm;border:1px solid var(--terre);border-radius:4px;background:#fff;color:var(--ebene)}
+  .nuit .qr-appel{border-color:var(--sable)}
+  .qr-appel img{width:34mm;height:34mm}
+  .qr-appel p{margin:0;font-size:11pt}
+  .qr-appel a{color:var(--terre);word-break:break-all}
+  .cta-note{font-size:10pt}
+  footer{padding:8mm 0;break-inside:avoid}
+  /* Planches photo des lieux */
+  .planche{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm;margin-top:5mm}
+  .planche img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:2px}
+  /* À la largeur A4, forcer les mises en page « ordinateur » */
+  .formules,.compagnons,.equipe{grid-template-columns:1fr 1fr}
+  .valeur{grid-template-columns:repeat(3,1fr)}
+  .bonus{grid-template-columns:auto 1fr}
+  .budget{grid-template-columns:1fr auto}
+  .moment img{aspect-ratio:21/9}
+  .moment.feu img{aspect-ratio:auto}
+  .equipe-photo{aspect-ratio:21/9}
+  .photo-groupe{display:none}
+  .compagnons{margin-top:8mm}
+  .bonus{margin-top:6mm}
+}
+
+/* ===== Cadrages : jamais de tête coupée ===== */
+img.portrait{aspect-ratio:3/4!important;object-position:50% 30%!important}
+img.paysage{aspect-ratio:4/3!important}
+.journee img.portrait{max-height:82vh;width:auto;max-width:100%;margin:0 auto}
+.hero picture img{object-position:62% 24%}
+@media (max-width:900px){.hero picture img{object-position:24% 30%}}
+
+/* ===== Finesse : dégradés, fondus, verre dépoli ===== */
+section:not(.ivoire):not(.nuit){background:radial-gradient(900px 420px at 88% 0%,rgba(232,200,154,.16),transparent 70%),radial-gradient(700px 380px at 0% 100%,rgba(196,134,74,.07),transparent 70%),#fff}
+.ivoire{background:radial-gradient(1000px 520px at 12% 8%,rgba(255,255,255,.65),transparent 70%),linear-gradient(180deg,#f6eee3 0%,#f2e8da 50%,#eddcc4 100%)}
+.ivoire.fondu-haut{background:linear-gradient(180deg,#fff 0,rgba(255,255,255,0) 160px),radial-gradient(1000px 520px at 12% 8%,rgba(255,255,255,.65),transparent 70%),linear-gradient(180deg,#f6eee3 0%,#f2e8da 50%,#eddcc4 100%)}
+.ivoire.fondu-haut.fondu-bas{background:linear-gradient(180deg,#fff 0,rgba(255,255,255,0) 160px),linear-gradient(0deg,#fff 0,rgba(255,255,255,0) 160px),linear-gradient(180deg,#f6eee3 0%,#f2e8da 50%,#eddcc4 100%)}
+.nuit{background:radial-gradient(900px 600px at 12% 0%,rgba(122,72,40,.55),transparent 65%),radial-gradient(800px 500px at 100% 100%,rgba(160,82,45,.28),transparent 70%),linear-gradient(180deg,#3d2415 0%,#2e1b0f 100%)}
+.fond-flou{position:relative;isolation:isolate;overflow:hidden}
+.fond-flou::before{content:"";position:absolute;inset:-60px;z-index:-2;background:var(--flou) center/cover no-repeat;filter:blur(34px) saturate(1.1);transform:scale(1.1);opacity:.55}
+.fond-flou::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(46,27,15,.42) 0%,rgba(46,27,15,.62) 100%)}
+.fond-flou>.wrap{position:relative;z-index:1}
+.hero::after{background:linear-gradient(180deg,rgba(28,16,8,.25) 0%,rgba(28,16,8,.18) 30%,rgba(28,16,8,.55) 62%,rgba(28,16,8,.86) 100%)}
+.hero h1{text-shadow:0 2px 24px rgba(0,0,0,.25)}
+.places{background:rgba(255,255,255,.14);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.collant{background:rgba(46,27,15,.82);-webkit-backdrop-filter:blur(16px) saturate(1.2);backdrop-filter:blur(16px) saturate(1.2);box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.compteur{-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);background:rgba(28,16,8,.5)}
+.btn{background:linear-gradient(135deg,#b35f36 0%,#a0522d 55%,#8a4526 100%);box-shadow:0 10px 24px -10px rgba(160,82,45,.6);transition:transform .25s,box-shadow .25s,background .25s}
+.btn:hover,.btn:focus-visible{transform:translateY(-1px);box-shadow:0 14px 28px -10px rgba(61,36,21,.55)}
+.btn-ghost,.btn-wa{background:rgba(255,255,255,.06);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);box-shadow:none}
+.moment,.formule,.encart,.bonus{border-radius:14px;box-shadow:0 18px 40px -24px rgba(61,36,21,.28)}
+.moment{border-color:rgba(226,211,191,.7)}
+.formule{background:linear-gradient(180deg,#fff 0%,#fffaf3 100%)}
+.formule.vedette{box-shadow:0 22px 46px -22px rgba(160,82,45,.4)}
+.bonus{background:linear-gradient(135deg,#fff 0%,#fbf4ea 100%)}
+.bonus-tot{background:linear-gradient(135deg,#fffaf2 0%,#f6e6cf 100%)}
+.duo-media img,.lieu-media .principale,.lettre img,.journee img,.equipe-photo{border-radius:14px;box-shadow:0 24px 50px -28px rgba(46,27,15,.45)}
+.lieu-media .principale img{border-radius:0}
+.vignettes .ouvre{border-radius:10px;overflow:hidden}
+.temoin{background:rgba(255,255,255,.04);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border-radius:14px}
+.ramene{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,0));border-radius:14px;padding:22px 22px 24px;border:1px solid rgba(242,232,218,.14)}
+.avis-zoom{box-shadow:0 18px 40px -24px rgba(61,36,21,.35);border-radius:12px}
+.galerie img{transition:transform .8s ease}
+.galerie img:hover{transform:scale(1.03)}
+.carte svg{box-shadow:0 24px 50px -30px rgba(61,36,21,.4)}
+@media print{
+  section,.ivoire,.nuit,.ivoire.fondu-haut,.ivoire.fondu-haut.fondu-bas{background:#fff!important}
+  .fond-flou::before,.fond-flou::after{display:none!important}
+  .btn,.moment,.formule,.encart,.bonus,.duo-media img,.lettre img,.journee img,.temoin,.ramene,.avis-zoom,.carte svg{box-shadow:none!important}
+  .ramene{background:none;border-color:var(--filet)}
+  .hero::after{background:linear-gradient(180deg,rgba(28,16,8,.2) 0%,rgba(28,16,8,.55) 60%,rgba(28,16,8,.85) 100%)}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     1. HÉROS
+     ============================================================ -->
+<header class="hero" id="haut">
+  <a class="marque" href="#haut" aria-label="Instinctiva"><span class="logo" aria-hidden="true"></span>Instinctiva</a>
+  <picture>
+    <source media="(max-width: 760px)" srcset="images/hero-lea-rhinoceros-mobile.webp" width="900" height="675">
+    <img src="images/hero-lea-rhinoceros.webp" width="1920" height="1440" alt="Léa, de dos sous son chapeau, observe un rhinocéros blanc dans la brousse." fetchpriority="high">
+  </picture>
+  <div class="wrap">
+    <p class="surtitre">Safari conscient · Afrique du Sud · du 31 mai au 9 juin 2027</p>
+    <h1>Ce que le quotidien a endormi, le sauvage le réveille.</h1>
+    <p class="chapo">Dix jours dans le Greater Kruger, en petit groupe de sept personnes, pour revenir à ton instinct au contact des animaux sauvages. Je t'accompagne du premier au dernier jour.</p>
+    <p class="places"><span class="point" aria-hidden="true"></span><span><span data-places>5</span> places disponibles sur <span data-total>7</span></span></p>
+    <p class="inscrites" data-inscrites-phrase>Sandra et Marilyn ont déjà réservé leur place.</p>
+    <div class="cta-bloc">
+      <a class="btn" data-appel href="#etape">Réserve ton appel découverte</a>
+      <a class="btn btn-ghost" href="#imagine">Découvrir le voyage</a>
+    </div>
+    <a class="wa wa-clair" data-wa href="https://wa.me/33695681782" target="_blank" rel="noopener"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg><span>Une question ? Écris-moi sur WhatsApp</span></a>
+    <div class="faits">
+      <div><b>10 jours</b>9 nuits sur place</div>
+      <div><b>Greater Kruger</b>Limpopo, Hoedspruit</div>
+      <div><b>7 places</b>un seul petit groupe</div>
+      <div><b>Dès <span data-eur="partage">5 555</span> €</b>tout compris sur place</div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================================================
+     2. IMAGINE
+     ============================================================ -->
+<section id="imagine">
+  <div class="wrap duo">
+    <div class="revele">
+      <p class="surtitre">Imagine</p>
+      <h2>Il est cinq heures et demie, et la brousse est encore endormie.</h2>
+      <p>Tu sors de ta tente, l'air frais te pique les joues, la nature se réveille. Au loin, un lion appelle. Tu marches en file derrière le guide, tes pas dans les traces laissées par la nuit, et ton corps se souvient de ce qu'il savait bien avant les écrans, les horaires et les listes à suivre.</p>
+      <p>Depuis combien d'années ce rêve d'Afrique attend son tour ? Tu as pris soin de tes enfants, de tes animaux, de ton travail, de tous ceux qui comptaient sur toi. Ton rêve, lui, est resté sur le quai.</p>
+      <p>L'Afrique est ma terre. J'ai grandi seize ans au Gabon, entre la forêt équatoriale et l'océan, avec les animaux sauvages pour voisins. Je sais ce que cette terre fait aux masques et aux armures : elle les retire, couche après couche, et elle te tient contre elle, en sécurité, pendant qu'elle le fait.</p>
+      <p><strong>Je te propose dix jours où le sauvage devient ton guide pour revenir à toi. Et je marche à tes côtés.</strong></p>
+      <blockquote class="citation">« J'arrivais dans le gris de ma vie quotidienne… je repars avec une nouvelle peau. »<cite>Marlène, voyageuse</cite></blockquote>
+    </div>
+    <div class="duo-media revele">
+      <img src="images/camp-feu-aube.webp" width="1200" height="800" loading="lazy" alt="À l'aube, un guide ranime le feu du camp sous les arbres de la brousse.">
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     3. CE VOYAGE EST POUR TOI SI
+     ============================================================ -->
+<section class="ivoire fondu-haut fondu-bas" id="pour-toi">
+  <div class="wrap">
+    <div class="lecture revele">
+      <p class="surtitre">Ce voyage est pour toi si…</p>
+      <h2>Tu te reconnais dans ces lignes.</h2>
+    </div>
+    <div class="deux-col">
+      <div class="revele">
+        <p class="col-titre">Ce qui vit en toi</p>
+        <ul class="liste coche">
+          <li>Tu rêves d'Afrique depuis des années, et tu repousses toujours ce rêve à plus tard.</li>
+          <li>Tu aimes les animaux d'un amour viscéral, ceux de ta maison comme ceux que tu n'as encore jamais croisés.</li>
+          <li>Tu envisages de partir en solo, et l'idée d'un petit groupe accompagné te rassure.</li>
+          <li>Tu as envie de vivre ce rêve en couple : c'est possible aussi.</li>
+          <li>Tu sens que ton instinct s'est endormi sous les obligations et le quotidien, et tu veux le retrouver.</li>
+          <li>Tu découvres la connexion avec les animaux ou tu n'as aucune idée de cet univers : les deux ont leur place ici.</li>
+        </ul>
+      </div>
+      <div class="revele">
+        <p class="col-titre">Ce que le voyage te demande</p>
+        <ul class="liste">
+          <li>Te lever avant l'aube pour les marches ou les safaris, à l'heure où la brousse s'éveille.</li>
+          <li>Vivre en petit groupe, en gardant le droit au silence quand tu en as besoin.</li>
+          <li>Accueillir les imprévus : la faune décide, la météo aussi.</li>
+          <li>Marcher trois heures à rythme lent, sur terrain plat, avec des pauses et en compagnie de guides experts, en toute sécurité.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     4. CE QUE TU VAS VIVRE AVEC MOI
+     TODO Léa : valider les moments signature et leurs dates.
+     ============================================================ -->
+<section id="vivre">
+  <div class="wrap">
+    <div class="lecture revele">
+      <p class="surtitre">Ce que tu vas vivre avec moi</p>
+      <h2>Plus loin que l'observation.</h2>
+      <p class="chapo">Pendant ces dix jours, je t'emmène plus loin que l'observation des animaux. Tout au long de ce voyage, je t'apprends à ouvrir tes sens puis ton intuition, jusqu'à percevoir l'animal comme lui te perçoit. Et quand une rencontre animale te bouscule, ou un moment fort dans l'aventure, je suis là pour accueillir ce que ça remue en toi.</p>
+    </div>
+
+    <div class="moments">
+      <article class="moment revele">
+        <img style="object-position:50% 34%" class="cadre-haut" src="images/za-marche-file.webp" width="1200" height="1600" loading="lazy" alt="Le groupe marche en file derrière le guide, le long d'un point d'eau.">
+        <div class="corps">
+          <p class="lieu">Camp de brousse · 31 mai au 3 juin</p>
+          <h3>L'écoute du sauvage</h3>
+          <p>Un temps immersif en pleine nature sauvage, face à la brousse, sans clôture ni réseau. Je te guide pour ouvrir tes sens, puis ton intuition, à l'environnement qui t'entoure. Peu à peu, tu sens que tu fais partie du vivant, et qu'il t'accueille pleinement.</p>
+        </div>
+      </article>
+      <article class="moment revele">
+        <img src="images/herd-troupeau.webp" width="1400" height="581" loading="lazy" alt="Le troupeau de Jabulani avance dans la réserve, accompagné de ses soigneurs.">
+        <div class="corps">
+          <p class="lieu">HERD · 4 juin</p>
+          <h3>Ce que l'éléphant réveille</h3>
+          <p>Tu rencontres le troupeau de Jabulani, des éléphants orphelins devenus une famille, présentés par leurs soigneurs. L'après-midi, on se retrouve pour partager ensemble ce que cette rencontre a remué, et ce que la magie des éléphants nous aura apporté.</p>
+        </div>
+      </article>
+      <article class="moment revele">
+        <img src="images/lieu-vautours-cap.webp" width="1400" height="934" loading="lazy" alt="Deux vautours du Cap, au plumage clair, photographiés à l'éco-lodge.">
+        <div class="corps">
+          <p class="lieu">Éco-lodge · 3 au 6 juin</p>
+          <h3>La médecine du vautour</h3>
+          <p>Le vautour nettoie la savane de ce qui est mort pour que la vie continue. Nous aurons droit à une visite d'un site de nidification de cette espèce si précieuse, afin d'encourager sa protection. Je t'inviterai aussi, si tu le souhaites, à te relier à son énergie et à voir ce que tu acceptes de laisser partir à l'intérieur de toi, grâce au vautour.</p>
+        </div>
+      </article>
+      <article class="moment revele">
+        <img src="images/za-elephants-boivent.webp" width="1200" height="1600" loading="lazy" alt="Quatre éléphants boivent au bord de l'eau.">
+        <div class="corps">
+          <p class="lieu">Rives de l'Olifants · 6 au 9 juin</p>
+          <h3>Au bord de l'Olifants</h3>
+          <p>Dans un lodge magnifique créé pour le bien-être et la conservation de la faune sauvage, mais aussi des communautés locales, face à la rivière où viennent boire les animaux sauvages : nous vivrons des temps de pleine conscience et de reliance pour accueillir ce que ces dix jours ont ouvert en toi. Un lieu rare, où le ressourcement s'allie aux safaris d'exception.</p>
+        </div>
+      </article>
+      <article class="moment feu revele">
+        <img src="images/camp-veillee-feu.webp" width="1200" height="800" loading="lazy" alt="Des voyageurs assis autour du feu de camp, au bord de la rivière, à la tombée du jour.">
+        <div class="corps">
+          <p class="lieu">Chaque soir</p>
+          <h3>Les veillées au feu</h3>
+          <p>Les récits du jour, les rires, et les larmes quand elles viennent. Tu partages si tu en as envie, nous échangeons tous ensemble, découvrons les histoires des guides. Mais ton silence a aussi toute sa place : j'encourage chaque membre du groupe à vivre ce voyage comme il en a besoin, sans imposer ni interactions ni échanges.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="compagnons">
+      <div class="compagnon revele">
+        <p class="surtitre">Compagnon de voyage</p>
+        <h3>Les voix du sauvage</h3>
+        <!-- TODO Léa : confirmer la liste des animaux. -->
+        <p>Des audios guidés que j'ai créés pour toi, un par animal que tu peux croiser : éléphant, lion, léopard, girafe, vautour, hippopotame. Tu les écoutes à ton rythme, sur ta terrasse ou juste après une rencontre, et tu te laisses porter.</p>
+      </div>
+      <div class="compagnon revele">
+        <p class="surtitre">Compagnon de voyage</p>
+        <h3>Ton carnet de terrain intérieur</h3>
+        <p>Un carnet numérique d'introspection et d'écriture, pour garder la trace de ce qui bouge en toi, jour après jour, et le retrouver intact une fois de retour. Un moyen de te centrer sur toi-même et d'observer ce que la nature africaine t'apporte.</p>
+      </div>
+    </div>
+
+    <div class="bonus revele">
+      <span class="badge">Offert à chaque inscription</span>
+      <p><strong>Une séance de communication animale avec ton propre animal avant le départ</strong>, pour le préparer à ton absence et partir le cœur tranquille.</p>
+    </div>
+    <div class="bonus bonus-tot revele" data-bonus-tot>
+      <span class="badge">Pour toute inscription avant le <span data-date-bonus>15 janvier 2027</span></span>
+      <p><strong>Un soin énergétique offert sur place, porté par l'animal qui vient à toi pendant le voyage.</strong> Sur le terrain, je reçois l'énergie de l'animal dont la présence t'est destinée, et je te l'offre en soin, au cœur de la brousse.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     5. UNE JOURNÉE EN BROUSSE
+     ============================================================ -->
+<section class="nuit" id="journee">
+  <div class="wrap journee">
+    <img class="portrait revele" src="images/za-lea-marche-guides.webp" width="1100" height="1467" loading="lazy" alt="Léa marche dans la brousse derrière deux guides armés.">
+    <div class="revele">
+      <p class="surtitre">Une journée en brousse</p>
+      <h2>De la marche à l'aube jusqu'au feu du soir.</h2>
+      <p class="chapo">Voici à quoi ressemble une journée au camp, entre le 31 mai et le 3 juin.</p>
+      <ol class="temps">
+        <li><span class="h">5 h 30</span><p>Le réveil se fait à la lueur des lampes. Café ou thé dans l'air si délicieux de la nature qui s'éveille, une couverture sur les épaules : les matins de juin sont frais.</p></li>
+        <li><span class="h">6 h</span><p>Départ à pied avec les guides armés. Le guide t'apprend à lire les traces des animaux, les branches cassées, les cris d'alarme des oiseaux. Je t'invite à t'arrêter, à sentir, à écouter ce que la brousse te raconte.</p></li>
+        <li><span class="h">10 h</span><p>Retour au camp pour un brunch copieux, puis le temps t'appartient : sieste sous la tente, écriture dans ton carnet, petite méditation au pied d'un arbre, temps d'échange en groupe.</p></li>
+        <li><span class="h">15 h 30</span><p>Safari en 4x4 ouvert : un moment exceptionnel. La lumière s'adoucit, les animaux se rapprochent des points d'eau, et le coucher de soleil te surprend au milieu de la savane. Un pur moment de grâce.</p></li>
+        <li><span class="h">19 h</span><p>Dîner cuisiné au feu de bois, sous un ciel où la Voie lactée se voit à l'œil nu. Puis la veillée, et les bruits de la nuit qui commencent, pour nous bercer. Ici, nous baignons au cœur du sauvage, du matin au soir, en toute sécurité.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     6. LES 10 JOURS EN UN COUP D'ŒIL
+     TODO Léa : programme reconstitué depuis les documents, à valider avant publication.
+     ============================================================ -->
+<section id="programme">
+  <div class="wrap">
+    <div class="lecture revele">
+      <p class="surtitre">Le programme</p>
+      <h2>Les dix jours en un coup d'œil.</h2>
+      <p class="chapo">Juin, c'est la saison sèche et le début de l'hiver. La végétation s'éclaircit et les animaux se rassemblent autour des points d'eau : l'une des meilleures périodes de l'année pour les observer.</p>
+    </div>
+
+    <figure class="carte revele" aria-labelledby="carte-titre">
+      <p class="col-titre" id="carte-titre">La route du voyage</p>
+      <svg viewBox="0 0 800 520" role="img" aria-label="Carte de l'itinéraire : arrivée à Hoedspruit, camp de brousse dans la réserve de Balule, éco-lodge des vautours près du Blyde River Canyon avec la visite de HERD, lodge au bord de l'Olifants, retour à Hoedspruit.">
+        <rect width="800" height="520" rx="10" fill="#f2e8da"/>
+        <!-- Parc Kruger -->
+        <path d="M600 0 H800 V520 H640 C620 420 650 330 610 240 C585 170 625 90 600 0Z" fill="#e8c89a" opacity=".45"/>
+        <path d="M600 0 C625 90 585 170 610 240 C650 330 620 420 640 520" fill="none" stroke="#c4864a" stroke-width="2" stroke-dasharray="6 6"/>
+        <text x="705" y="70" class="c-zone" text-anchor="middle">Parc Kruger</text>
+        <!-- Réserve de Balule -->
+        <path d="M420 70 C500 50 590 70 605 140 C620 220 600 300 540 320 C480 340 420 310 405 250 C390 180 380 90 420 70Z" fill="#e8c89a" opacity=".35"/>
+        <text x="470" y="96" class="c-zone">Réserve de Balule</text>
+        <!-- Escarpement du Drakensberg -->
+        <g fill="#c4864a" opacity=".55">
+          <path d="M40 470 L80 400 L110 445 L150 370 L185 430 L215 380 L250 470Z"/>
+          <path d="M60 330 L95 270 L125 315 L160 255 L195 330Z" opacity=".7"/>
+        </g>
+        <text x="30" y="505" class="c-zone">Escarpement du Drakensberg</text>
+        <!-- Rivières -->
+        <path d="M30 210 C150 190 220 250 320 230 C420 210 470 260 540 240 C620 215 700 250 800 225" fill="none" stroke="#8fb0ae" stroke-width="5" stroke-linecap="round"/>
+        <text x="40" y="190" class="c-riv">rivière Olifants</text>
+        <path d="M130 520 C150 470 170 430 200 405 C230 380 230 340 260 300 C285 265 300 245 320 232" fill="none" stroke="#8fb0ae" stroke-width="3" stroke-linecap="round"/>
+        <text x="138" y="395" class="c-riv" transform="rotate(-52 138 395)">Blyde</text>
+        <!-- Itinéraire -->
+        <path d="M370 372 C390 290 430 200 470 150" class="c-route"/>
+        <path d="M470 150 C420 220 340 300 290 362" class="c-route"/>
+        <path d="M290 362 C360 330 470 290 520 248" class="c-route"/>
+        <path d="M520 248 C470 300 410 345 378 368" class="c-route c-route-fin"/>
+        <!-- Visites -->
+        <path d="M290 362 L398 430" class="c-visite"/>
+        <path d="M290 362 L190 418" class="c-visite"/>
+        <circle cx="398" cy="430" r="7" class="c-pt-visite"/>
+        <text x="412" y="444" class="c-lbl">HERD, éléphants</text>
+        <circle cx="190" cy="418" r="7" class="c-pt-visite"/>
+        <text x="30" y="470" class="c-lbl">Blyde River Canyon</text>
+        <!-- Aéroport -->
+        <circle cx="372" cy="372" r="11" fill="#3d2415"/>
+        <path d="M366 372 h12 M372 366 v12" stroke="#f2e8da" stroke-width="2"/>
+        <text x="388" y="380" class="c-lbl c-fort">Hoedspruit</text>
+        <!-- Étapes -->
+        <g class="c-etape"><circle cx="470" cy="150" r="18"/><text x="470" y="156">1</text></g>
+        <text x="496" y="146" class="c-lbl c-fort">Camp de brousse</text>
+        <text x="496" y="171" class="c-lbl">31 mai au 3 juin</text>
+        <g class="c-etape"><circle cx="290" cy="362" r="18"/><text x="290" y="368">2</text></g>
+        <text x="40" y="318" class="c-lbl c-fort">Éco-lodge des vautours</text>
+        <text x="40" y="343" class="c-lbl">3 au 6 juin</text>
+        <g class="c-etape"><circle cx="520" cy="248" r="18"/><text x="520" y="254">3</text></g>
+        <text x="540" y="290" class="c-lbl c-fort">Lodge de l'Olifants</text>
+        <text x="540" y="315" class="c-lbl">6 au 9 juin</text>
+        <!-- Nord -->
+        <g transform="translate(60 60)"><path d="M0 -24 L9 8 L0 2 L-9 8Z" fill="#3d2415"/><text x="0" y="28" class="c-lbl" text-anchor="middle">N</text></g>
+      </svg>
+      <figcaption>Carte indicative, distances approximatives. Tous les trajets se font en véhicule privé.</figcaption>
+    </figure>
+    <ol class="frise revele">
+      <li class="etape">La brousse sans clôture</li>
+      <li><span class="j">Jour 1</span><p class="d">Lun. 31 mai</p><p>Arrivée à Hoedspruit, transfert, installation au camp de brousse, premier feu.</p></li>
+      <li><span class="j">Jour 2</span><p class="d">Mar. 1er juin</p><p>Marche à l'aube, repos, safari 4x4 en fin de journée, soirée.</p></li>
+      <li><span class="j">Jour 3</span><p class="d">Mer. 2 juin</p><p>Marche à l'aube, temps d'écoute du sauvage, safari 4x4, soirée.</p></li>
+      <li><span class="j">Jour 4</span><p class="d">Jeu. 3 juin</p><p>Dernière marche, route vers l'éco-lodge, repas libre en ville.</p></li>
+      <li class="etape">Éléphants, vautours et canyon</li>
+      <li><span class="j">Jour 5</span><p class="d">Ven. 4 juin</p><p>Rencontre du troupeau de Jabulani à HERD, brunch, temps de partage l'après-midi.</p></li>
+      <li><span class="j">Jour 6</span><p class="d">Sam. 5 juin</p><p>Marche matinale et rencontre des vautours du Cap, balade en bateau sur le Blyde River Canyon.</p></li>
+      <li class="etape">Les rives de l'Olifants</li>
+      <li><span class="j">Jour 7</span><p class="d">Dim. 6 juin</p><p>Route vers le lodge de l'Olifants, installation.</p></li>
+      <li><span class="j">Jour 8</span><p class="d">Lun. 7 juin</p><p>Activités bien-être ou temps libre, safaris.</p></li>
+      <li><span class="j">Jour 9</span><p class="d">Mar. 8 juin</p><p>Safaris, temps libre, dernière soirée.</p></li>
+      <li><span class="j">Jour 10</span><p class="d">Mer. 9 juin</p><p>Dernier safari matinal puis fin du voyage.</p></li>
+    </ol>
+    <p class="mention">Programme susceptible d'évoluer légèrement selon la faune et la météo. Arrivée à l'aéroport de Hoedspruit le 31 mai au plus tard à 13 h.</p>
+    <div class="cta-bloc revele">
+      <a class="btn" data-appel href="#etape">Réserve ton appel découverte</a>
+      <p class="cta-note">Un vrai temps d'échange pour sentir si ce voyage est fait pour toi. Sans engagement.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     7. LES TROIS LIEUX (jamais nommés)
+     TODO : demander à Natacha de vraies photos des lieux (tente, douche extérieure, chambres).
+     ============================================================ -->
+<section class="ivoire fondu-haut" id="lieux">
+  <div class="wrap">
+    <div class="lecture revele">
+      <p class="surtitre">Où tu vas dormir</p>
+      <h2>Trois lieux, trois façons de rencontrer la brousse.</h2>
+      <p class="chapo">Chaque étape a été choisie pour son lien au vivant. Voici le programme, tel qu'il est, pour que tu partes en pleine conscience de la magie qui t'attend.</p>
+    </div>
+
+    <article class="lieu-bloc revele">
+      <div class="lieu-media"><button type="button" class="ouvre principale" data-galerie="camp" data-index="0" aria-label="Voir les 13 photos de le camp de brousse"><img src="images/galeries/camp/camp-01.webp" width="1200" height="800" loading="lazy" alt="Une tente de toile éclairée à la tombée de la nuit, lanternes posées au sol."><span class="compteur">Voir les 13 photos</span></button>
+        <div class="vignettes"><button type="button" class="ouvre" data-galerie="camp" data-index="1" aria-label="Voir les photos de le camp de brousse"><img src="images/galeries/camp/camp-02.webp" width="1200" height="800" loading="lazy" alt="Intérieur d&#x27;une tente : un vrai lit fait de draps blancs."></button><button type="button" class="ouvre" data-galerie="camp" data-index="2" aria-label="Voir les photos de le camp de brousse"><img src="images/galeries/camp/camp-03.webp" width="1200" height="800" loading="lazy" alt="La douche en plein air, un seau suspendu à un trépied face à la rivière."></button><button type="button" class="ouvre" data-galerie="camp" data-index="3" aria-label="Voir les photos de le camp de brousse"><img src="images/galeries/camp/camp-04.webp" width="1200" height="800" loading="lazy" alt="Les voyageurs réunis autour du feu de camp à la tombée du jour."><span class="plus">+ 9 photos</span></button></div></div>
+      <div>
+        <p class="dates">31 mai au 3 juin · 3 nuits</p>
+        <h3>Un camp en pleine brousse, réservé pour le groupe</h3>
+        <p>Au cœur de la réserve de Maseke, 8 000 hectares au sein de Balule, dans le Greater Kruger. Huit tentes de toile, une par personne, avec de vrais lits. La douche se prend dehors, sous les étoiles, avec une eau chauffée au feu de bois.</p>
+        <p>L'espace est ouvert, sans clôture : les animaux passent la nuit tout près, et c'est ce qui rend ces trois nuits si fortes. Le matin, on part à pied avec les guides et l'après-midi, en 4x4 ouvert. Ici, nous sommes en totale sécurité, grâce aux guides expérimentés qui sont avec nous.</p>
+        <ul class="pastilles"><li>Ta propre tente</li><li>Douche extérieure</li><li>Immersion sauvage</li><li>Dîners à la belle étoile</li><li>Marches et 4x4</li></ul>
+      </div>
+    </article>
+
+    <article class="lieu-bloc revele">
+      <div class="lieu-media"><button type="button" class="ouvre principale" data-galerie="eco" data-index="0" aria-label="Voir les 13 photos de l'éco-lodge des vautours"><img src="images/galeries/eco/eco-01.webp" width="1400" height="934" loading="lazy" alt="Une tente suite sur sa plateforme en bois, au coucher du soleil."><span class="compteur">Voir les 13 photos</span></button>
+        <div class="vignettes"><button type="button" class="ouvre" data-galerie="eco" data-index="1" aria-label="Voir les photos de l'éco-lodge des vautours"><img src="images/galeries/eco/eco-02.webp" width="1400" height="934" loading="lazy" alt="Intérieur de la tente suite : lit à baldaquin et moustiquaire."></button><button type="button" class="ouvre" data-galerie="eco" data-index="2" aria-label="Voir les photos de l'éco-lodge des vautours"><img src="images/galeries/eco/eco-03.webp" width="1400" height="934" loading="lazy" alt="La douche extérieure, ouverte sur la falaise."></button><button type="button" class="ouvre" data-galerie="eco" data-index="3" aria-label="Voir les photos de l'éco-lodge des vautours"><img src="images/galeries/eco/eco-04.webp" width="1400" height="1174" loading="lazy" alt="Lits jumeaux sous la moustiquaire, dans une tente suite."><span class="plus">+ 9 photos</span></button></div></div>
+      <div>
+        <p class="dates">3 au 6 juin · 3 nuits</p>
+        <h3>Un éco-lodge dédié à la protection du vautour du Cap</h3>
+        <p>À trente minutes de Hoedspruit, entre le Greater Kruger et le Blyde River Canyon. Sur les falaises voisines nichent environ 650 couples de vautours du Cap, une espèce classée vulnérable par l'UICN.</p>
+        <p>Tu dors dans une tente suite de grand confort posée sur plateforme, avec salle de bain privée, douche extérieure et terrasse face aux montagnes. Le lieu vit au solaire, recycle son eau et cultive son potager en permaculture. Un lieu autonome et respectueux de l'environnement, qui prend soin de la nature magnifique qu'il protège.</p>
+        <ul class="pastilles"><li>Eco-lodge</li><li>Terrasse face aux montagnes</li><li>Énergie solaire</li><li>Potager en permaculture</li></ul>
+      </div>
+    </article>
+
+    <article class="lieu-bloc revele">
+      <div class="lieu-media"><button type="button" class="ouvre principale" data-galerie="olifants" data-index="0" aria-label="Voir les 13 photos de le lodge de l'Olifants"><img src="images/galeries/olifants/olifants-01.webp" width="1600" height="1067" loading="lazy" alt="Une femme médite sur un rocher qui surplombe la rivière Olifants."><span class="compteur">Voir les 13 photos</span></button>
+        <div class="vignettes"><button type="button" class="ouvre" data-galerie="olifants" data-index="1" aria-label="Voir les photos du lodge de l'Olifants"><img src="images/galeries/olifants/olifants-02.webp" width="1600" height="1067" loading="lazy" alt="Une suite lumineuse ouverte sur la rivière."></button><button type="button" class="ouvre" data-galerie="olifants" data-index="2" aria-label="Voir les photos du lodge de l'Olifants"><img src="images/galeries/olifants/olifants-03.webp" width="1024" height="683" loading="lazy" alt="Séance de yoga sur la terrasse en bois, face à la brousse."></button><button type="button" class="ouvre" data-galerie="olifants" data-index="3" aria-label="Voir les photos du lodge de l'Olifants"><img src="images/galeries/olifants/olifants-04.webp" width="1024" height="683" loading="lazy" alt="Marche guidée le long de la rivière."><span class="plus">+ 9 photos</span></button></div></div>
+      <div>
+        <p class="dates">6 au 9 juin · 3 nuits</p>
+        <h3>Un lodge bien-être sur les rives de l'Olifants</h3>
+        <p>Sans clôture avec le parc Kruger. Depuis le lodge, tu vois passer éléphants et hippopotames venus boire à la rivière. Chaque jour, yoga, breathwork et méditation t'attendent, et tu y vas si tu en as envie.</p>
+        <p>Piscine d'eau salée, cuisine entièrement végétale, spa en option. Après la brousse, ton corps se pose et tout ce que tu as vécu trouve sa place. Un lieu d'exception dans lequel le ressourcement s'allie à des safaris exceptionnels, où je vais te guider dans une connexion encore plus profonde avec toi-même et la faune africaine.</p>
+        <ul class="pastilles"><li>Vue sur la rivière</li><li>Activités bien-être incluses</li><li>Cuisine végétale</li><li>Piscine d'eau salée</li></ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Bande photo -->
+<div class="galerie" aria-label="Quelques rencontres possibles en brousse">
+  <img src="images/za-lion.webp" width="1200" height="1795" loading="lazy" alt="Un lion à crinière sombre regarde l'objectif entre les branches.">
+  <img src="images/za-leopard-arbre.webp" width="1200" height="1795" loading="lazy" alt="Un léopard allongé sur une branche, la queue pendante.">
+  <img src="images/za-zebre-pique-boeuf.webp" width="1200" height="1795" loading="lazy" alt="Un zèbre, un pique-bœuf posé sur le dos de son voisin.">
+  <img src="images/za-elephant-douche.webp" width="1003" height="1500" loading="lazy" alt="Un éléphant s'asperge d'eau avec sa trompe.">
+  <img src="images/za-girafe-arbre-orage.webp" width="1200" height="1795" loading="lazy" alt="Une girafe sous un arbre, éclairée par le soleil devant un ciel d'orage.">
+  <img src="images/za-hyene.webp" width="1200" height="1795" loading="lazy" alt="Une hyène tachetée, oreilles dressées, dans l'herbe haute.">
+  <img src="images/za-hippopotame.webp" width="1200" height="1600" loading="lazy" alt="Un hippopotame broute dans la prairie, montagnes en arrière-plan.">
+  <img src="images/za-rhino-girafe-aube.webp" width="1200" height="1795" loading="lazy" alt="Un rhinocéros blanc broute, une girafe le regarde par-dessus les buissons, ciel rose de l'aube.">
+</div>
+
+<!-- ============================================================
+     8. LE SAFARI CONSCIENT
+     ============================================================ -->
+<section id="conscient">
+  <div class="wrap duo inverse">
+    <div class="revele">
+      <p class="surtitre">Le safari conscient</p>
+      <h2>Tu entres chez eux en invitée.</h2>
+      <p>Ici, on observe sans harceler : quand un animal s'éloigne, on le laisse partir. Cette posture change tout ce qui se passe ensuite : les animaux restent plus longtemps, tu respires plus lentement, et la rencontre devient réciproque.</p>
+      <p>À HERD, l'orphelinat que nous aurons la chance exclusive de visiter, les éléphants vivent libres dans une grande réserve, loin du zoo et de tout contact forcé. Tu les découvres dans une magnifique proximité, dans leur liberté car ce sont eux qui décident.</p>
+      <p>Ton voyage finance les frais de conservation de Balule et du Greater Kruger, et soutient la protection des vautours du Cap ainsi que les communautés locales qui prennent soin de toute cette nature.</p>
+      <p><strong>Ce que je te garantis, ce sont les conditions de la rencontre : un petit groupe, des guides expérimentés, un rythme lent et ma présence.</strong> La faune, elle, reste libre de se montrer ou de passer son chemin. C'est pour ça que chaque rencontre compte.</p>
+    </div>
+    <div class="duo-media revele">
+      <img class="portrait" src="images/za-lea-chapeau-elephant.webp" width="1200" height="1600" loading="lazy" alt="Depuis le 4x4, Léa sous son chapeau observe un éléphant qui broute à quelques mètres.">
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     8 bis. CE QUE TU RAMÈNES À LA FIN DU VOYAGE
+     ============================================================ -->
+<section class="nuit fond-flou" id="ramenes" style="--flou:url(images/camp-veillee-feu.webp)">
+  <div class="wrap">
+    <div class="lecture revele">
+      <p class="surtitre">Ce que tu ramènes à la fin du voyage</p>
+      <h2>Dix jours qui continuent longtemps après.</h2>
+      <p class="chapo">Tu repars avec des photos, bien sûr. Et avec ce qu'aucun appareil ne capture : ce qui s'est réveillé en toi au contact du sauvage, et qui reste.</p>
+    </div>
+    <div class="ramenes">
+      <article class="ramene revele">
+        <h3>Ton corps, à nouveau vivant</h3>
+        <p>Marcher à l'aube, sentir l'air froid sur ta peau, t'endormir au rythme des bruits de la nuit. Après dix jours en brousse, ton corps retrouve son propre rythme, et il le garde en rentrant.</p>
+        <blockquote class="ramene-cit">« Je repars grandie, je repars nourrie. »<cite>Marion, voyageuse</cite></blockquote>
+      </article>
+      <article class="ramene revele">
+        <h3>Une écoute affûtée</h3>
+        <p>Au fil des marches et des temps d'écoute, tes sens s'ouvrent, puis ton intuition. Tu rentres avec une attention plus fine aux animaux, aux tiens comme aux sauvages, et à ce qu'ils éveillent en toi.</p>
+        <blockquote class="ramene-cit">« Il y a des moments suspendus où tu te dis : waouh, je suis juste là où je dois être. »<cite>Anne-Charlotte, voyageuse</cite></blockquote>
+      </article>
+      <article class="ramene revele">
+        <h3>La permission de passer en premier</h3>
+        <p>Dix jours où personne n'attend rien de toi. Tu retrouves le goût de recevoir, et l'élan de continuer à te choisir une fois de retour chez toi.</p>
+        <blockquote class="ramene-cit">« Ça m'a redonné de l'allant. »<cite>Marlène, voyageuse</cite></blockquote>
+      </article>
+      <article class="ramene revele">
+        <h3>Des compagnons de route</h3>
+        <p>Un petit groupe qui partage la même sensibilité, des veillées, des fous rires et des discussions riches de sens. Le lien continue après le retour, sur le groupe WhatsApp et lors de notre appel trois semaines plus tard.</p>
+        <blockquote class="ramene-cit">« Je n'oublierai jamais la cohésion qu'on a créée dans ce groupe. »<cite>Myriam, voyageuse</cite></blockquote>
+      </article>
+      <article class="ramene revele">
+        <h3>La fierté d'avoir osé</h3>
+        <p>Partir loin, souvent en solo, vers un rêve repoussé depuis des années. Ce pas-là, tu l'as fait pour toi, et il ouvre la voie à tous ceux qui suivront. Et ça, ça n'a pas de prix.</p>
+        <blockquote class="ramene-cit">« Franchement, il faut oser. »<cite>Marion, voyageuse</cite></blockquote>
+      </article>
+      <article class="ramene revele">
+        <h3>Des outils pour garder le lien</h3>
+        <p>Les audios « Les voix du sauvage » à réécouter chez toi, ton carnet de terrain intérieur, l'appel de groupe trois semaines après le retour : tout est pensé pour que l'élan reste vivant dans ton quotidien.</p>
+        <blockquote class="ramene-cit">« On n'a rien à prévoir. »<cite>Mélanie, voyageuse</cite></blockquote>
+      </article>
+    </div>
+    <p class="ramenes-fin revele">Ce que je te garantis, c'est le cadre, la présence et le soin. Ce qui s'ouvre en toi t'appartient, et chaque personne le vit à sa façon.</p>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     9. QUI T'ACCOMPAGNE
+     ============================================================ -->
+<section class="ivoire" id="lea">
+  <div class="wrap">
+    <div class="duo">
+      <div class="revele">
+        <p class="surtitre">Qui t'accompagne</p>
+        <h2>Je suis Léa, et l'Afrique m'a élevée.</h2>
+        <p>J'ai grandi seize ans au Gabon. Depuis, pas un jour ne passe sans que je sente le battement de l'Afrique en moi. Cette terre m'a toujours ramenée au sol, à mon intuition, à mon être authentique.</p>
+        <p>Je suis experte en communication animale, spécialisée dans la reliance avec la médecine des animaux sauvages, et guide de voyages holistiques en Afrique. Je transmets, je forme et j'accompagne celles et ceux qui veulent retrouver le lien avec le vivant. Pendant le voyage, mon rôle est de tenir l'espace : t'aider à comprendre ce que les animaux et la terre éveillent en toi, accueillir les émotions qui montent, être là quand tu en as besoin.</p>
+        <ul class="reperes">
+          <li><b>16 ans</b>au Gabon</li>
+          <li><b>7 ans</b>de pratique professionnelle</li>
+          <li><b>3 000+</b>communications animales</li>
+          <li><b>300+</b>élèves formées</li>
+        </ul>
+        <blockquote class="citation">« Léa est toujours là. Si on a besoin, elle est là à 100 %. »<cite>Marion, voyageuse</cite></blockquote>
+      </div>
+      <div class="duo-media revele">
+        <img class="portrait" src="images/lea-portrait.webp" width="1200" height="1600" loading="lazy" alt="Portrait de Léa souriante, assise dans les herbes de la savane.">
+      </div>
+    </div>
+    <div class="equipe">
+      <div class="revele">
+        <img class="equipe-photo" src="images/za-elephant-piste-4x4.webp" width="1200" height="1600" loading="lazy" alt="Depuis le 4x4, le chauffeur s'arrête devant un éléphant qui traverse la piste.">
+        <h3>Natacha et Nature Connexion</h3>
+        <p>Natacha Wauquiez et son agence Nature Connexion, tour-opérateur spécialiste de l'Afrique australe, coordonnent toute la logistique : transferts, hébergements, réservations sur place. Tu n'as rien à organiser une fois sur place.</p>
+      </div>
+      <div class="revele">
+        <img style="object-position:50% 26%" class="cadre-haut equipe-photo" src="images/za-guides-marche.webp" width="1200" height="1600" loading="lazy" alt="Deux guides armés ouvrent la marche sur un sentier de brousse.">
+        <h3>Les guides de terrain</h3>
+        <p>Qualifiés, armés et formés aux premiers secours, ils cumulent des centaines d'heures de marche en zone sauvage. Ils connaissent chaque trace, chaque comportement des animaux, et veillent sur le groupe à chaque sortie.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     10. PAROLES DE VOYAGEUSES
+     Vidéos : dossier Vimeo NAMIBIE de Léa. Citations tirées des sous-titres automatiques Vimeo.
+     ============================================================ -->
+<section class="nuit fond-flou" id="paroles" style="--flou:url(images/za-voyageuses-4x4.webp)">
+  <div class="wrap">
+    <div class="lecture revele">
+      <p class="surtitre">Paroles de voyageuses</p>
+      <h2>Elles sont parties avec moi.</h2>
+    </div>
+    <img style="object-position:50% 20%" class="cadre-haut photo-groupe revele" src="images/za-voyageuses-4x4.webp" width="1200" height="1600" loading="lazy" alt="Trois voyageuses souriantes à bord du 4x4 de safari.">
+    <p class="defile" aria-hidden="true">Fais défiler pour écouter chacune →</p>
+    <div class="temoins" tabindex="0" aria-label="Témoignages vidéo des voyageuses">
+      <figure class="temoin">
+        <div class="video"><iframe src="https://player.vimeo.com/video/1211130800?h=87e3f61031&amp;title=0&amp;byline=0&amp;portrait=0&amp;dnt=1" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Témoignage vidéo de Anne-Charlotte"></iframe></div>
+        <blockquote><p>« Quand on voyage avec toi, on se sent en confiance. Du début à la fin, on est guidé. »</p><p>« Il y aura un avant et un après ce voyage. »</p></blockquote>
+        <figcaption><p class="qui">Anne-Charlotte</p><p class="ctx">Plusieurs voyages en Afrique du Sud avec Léa</p></figcaption>
+        <a class="print-only qr-video" href="https://vimeo.com/1211130800/87e3f61031"><img src="images/qr/video-anne-charlotte.svg" width="90" height="90" alt="QR code vers le témoignage vidéo de Anne-Charlotte"><span>Scanne pour écouter Anne-Charlotte</span></a>
+      </figure>
+      <figure class="temoin">
+        <div class="video"><iframe src="https://player.vimeo.com/video/1211129920?h=7e52ecc9d0&amp;title=0&amp;byline=0&amp;portrait=0&amp;dnt=1" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Témoignage vidéo de Marlène"></iframe></div>
+        <blockquote><p>« C'était des larmes que je ne m'étais pas autorisées à verser, et je me suis sentie nettoyée. »</p><p>« Prête à repartir, avec une nouvelle peau. »</p></blockquote>
+        <figcaption><p class="qui">Marlène</p><p class="ctx">Voyage en Namibie avec Léa</p></figcaption>
+        <a class="print-only qr-video" href="https://vimeo.com/1211129920/7e52ecc9d0"><img src="images/qr/video-marlene.svg" width="90" height="90" alt="QR code vers le témoignage vidéo de Marlène"><span>Scanne pour écouter Marlène</span></a>
+      </figure>
+      <figure class="temoin">
+        <div class="video"><iframe src="https://player.vimeo.com/video/1211129919?h=af69282d4c&amp;title=0&amp;byline=0&amp;portrait=0&amp;dnt=1" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Témoignage vidéo de Myriam"></iframe></div>
+        <blockquote><p>« C'était une grande première de partir à l'aventure avec des personnes que je ne connaissais pas. »</p><p>« Je ne me suis jamais sentie seule. »</p></blockquote>
+        <figcaption><p class="qui">Myriam</p><p class="ctx">Voyage en Namibie avec Léa · partie sans connaître le groupe</p></figcaption>
+        <a class="print-only qr-video" href="https://vimeo.com/1211129919/af69282d4c"><img src="images/qr/video-myriam.svg" width="90" height="90" alt="QR code vers le témoignage vidéo de Myriam"><span>Scanne pour écouter Myriam</span></a>
+      </figure>
+      <figure class="temoin">
+        <div class="video"><iframe src="https://player.vimeo.com/video/1211129921?h=23a2f4e1e8&amp;title=0&amp;byline=0&amp;portrait=0&amp;dnt=1" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Témoignage vidéo de Mélanie"></iframe></div>
+        <blockquote><p>« Moi qui appréhendais d'avoir besoin de temps seule, c'était vraiment fluide. »</p><p>« On n'a rien à prévoir. »</p></blockquote>
+        <figcaption><p class="qui">Mélanie</p><p class="ctx">Voyage en Namibie avec Léa</p></figcaption>
+        <a class="print-only qr-video" href="https://vimeo.com/1211129921/23a2f4e1e8"><img src="images/qr/video-melanie.svg" width="90" height="90" alt="QR code vers le témoignage vidéo de Mélanie"><span>Scanne pour écouter Mélanie</span></a>
+      </figure>
+      <figure class="temoin">
+        <div class="video"><iframe src="https://player.vimeo.com/video/1211129918?h=9f7c07a074&amp;title=0&amp;byline=0&amp;portrait=0&amp;dnt=1" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Témoignage vidéo de Marion"></iframe></div>
+        <blockquote><p>« Je repars grandie, je repars nourrie. »</p><p>« Franchement, il faut oser. »</p></blockquote>
+        <figcaption><p class="qui">Marion</p><p class="ctx">Voyage en Namibie avec Léa</p></figcaption>
+        <a class="print-only qr-video" href="https://vimeo.com/1211129918/9f7c07a074"><img src="images/qr/video-marion.svg" width="90" height="90" alt="QR code vers le témoignage vidéo de Marion"><span>Scanne pour écouter Marion</span></a>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     11. FAQ
+     ============================================================ -->
+<section id="questions">
+  <div class="wrap">
+    <div class="lecture">
+      <p class="surtitre">Les questions qu'on me pose</p>
+      <h2>Tout ce qui te retient, on en parle.</h2>
+      <div class="faq">
+        <details>
+          <summary>Je pars en solo, c'est possible ?</summary>
+          <div class="rep">
+            <p>Oui, et c'est le cas le plus fréquent. Les trois premières nuits, tu as ta propre tente. Quelqu'un t'accueille à l'aéroport de Hoedspruit. Avant le départ, deux appels en visio te permettent de rencontrer le groupe, et un groupe WhatsApp te relie aux autres dès l'inscription. Sur place, je suis là du premier au dernier jour.</p>
+            <blockquote class="citation">« C'était une grande première de partir avec des inconnues… je me suis sentie à l'aise tout de suite, et je n'oublierai jamais la cohésion qu'on a créée. »<cite>Myriam, voyageuse</cite></blockquote>
+          </div>
+        </details>
+        <details>
+          <summary>Vais-je partager ma chambre avec quelqu'un que je ne connais pas ?</summary>
+          <div class="rep">
+            <!-- TODO Léa : confirmer la règle exacte des binômes. -->
+            <p>Seulement si tu choisis la formule en chambre partagée, et uniquement dans les deux lodges. Les chambres sont très grandes et les lits séparés. Tu peux aussi venir en couple ou avec un proche, et partager ta chambre avec la personne de ton choix. Si tu préfères ton intimité, la formule individuelle existe pour ça.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Je peux venir en couple ?</summary>
+          <div class="rep">
+            <p>Oui, avec plaisir : ce voyage accueille aussi les couples. En formule chambre partagée, tu partages ta chambre avec ton ou ta partenaire dans les deux lodges. Les marches, les soirées et les temps d'écoute se vivent en groupe, et chacun y trouve sa place. Mais si tu veux t'isoler, tu peux bien sûr en profiter. Ce voyage est le tien, tu le vis comme tu en as besoin.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Dormir sans clôture, c'est dangereux ?</summary>
+          <div class="rep">
+            <!-- TODO : détails à confirmer avec le camp (raccompagnement, consignes de nuit). -->
+            <p>Les guides vivent au camp avec le groupe et connaissent la brousse depuis des années. Le soir, des consignes claires te sont données, et on te raccompagne jusqu'à ta tente une fois la nuit tombée. Les bruits que tu entendras sont la vie de la réserve qui continue autour de toi. Beaucoup de voyageurs disent que ces nuits-là ont été les plus fortes du voyage : se sentir faire pleinement partie de la nature sauvage, c'est un cadeau rare. Tu seras en sécurité, car nous serons accompagnés de professionnels.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Faut-il être en grande forme ?</summary>
+          <div class="rep">
+            <p>Il suffit de pouvoir marcher trois à quatre heures à rythme lent, sur terrain plat, avec des pauses. Un certificat médical est demandé à partir de 65 ans. Le voyage reste déconseillé en cas de fragilité importante des genoux, des hanches ou du dos, à cause des marches et des pistes en 4x4. On en parle ensemble pendant un appel découverte, si tu le souhaites.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Je ne peux pas laisser mes animaux…</summary>
+          <div class="rep">
+            <p>Je te comprends, c'est souvent ce qui retient le plus les personnes qui voyagent. Avant le départ, je t'offre une séance de communication animale avec ton animal, pour te permettre de le préparer à ton absence et lui expliquer ce que tu vas vivre. Je te transmets aussi une fiche pour organiser sa garde sereinement.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Je n'ai jamais pratiqué la communication animale.</summary>
+          <div class="rep">
+            <p>Ta place est ici, quel que soit ton niveau. Tu peux venir sans rien connaître de la communication animale : il n'y a aucun prérequis. Tout est guidé pas à pas, rien n'est évalué, et tu avances à ton rythme. Les praticiennes en CA trouvent aussi leur place : le terrain sauvage ouvre une expérience nouvelle, même après des années de pratique.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Et si on voit peu d'animaux ?</summary>
+          <div class="rep">
+            <p>Juin est la saison sèche, l'une des meilleures périodes d'observation : la végétation s'éclaircit et les animaux se regroupent autour des points d'eau. La faune reste libre, et je ne te promettrai jamais de voir une espèce. Ce que je sais, c'est qu'un seul éléphant observé longtemps, en silence, te marque plus qu'une liste d'animaux cochés à toute vitesse.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Quel confort en brousse ?</summary>
+          <div class="rep">
+            <p>De vrais lits, une douche chaude chauffée au feu de bois, en plein air. Au camp, les toilettes sont sèches, le réseau et l'électricité limités. Les matins et les soirées sont frais en juin, prévois une polaire. Les deux lodges qui suivent offrent salle de bain privée et tout le confort.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Je ne parle pas anglais.</summary>
+          <div class="rep">
+            <p>C'est prévu ! Je traduis et je fais le lien avec les guides et les équipes sur place. Tu peux vivre tout le voyage en français, je suis là aussi pour ça.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Et si je dois annuler ?</summary>
+          <div class="rep">
+            <p>Une fois réservée, ta place ne se rembourse pas : c'est la règle de notre partenaire sur place. C'est pour ça que l'assurance annulation est obligatoire. Elle te protège en cas d'imprévu, et je t'aide à choisir la bonne au moment de l'inscription.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Et mes vols, comment je m'organise ?</summary>
+          <div class="rep">
+            <p>Natacha, de Nature Connexion, t'aide à trouver et réserver tes vols : l'aller-retour jusqu'à Johannesburg, puis le petit vol vers Hoedspruit. Ton seul repère : arriver à l'aéroport de Hoedspruit le 31 mai au plus tard à 13 h, et repartir le 9 juin après 10 h.</p>
+            <p>Compte environ 650 à 1 000 € pour l'aller-retour Paris à Johannesburg en juin, et 200 à 350 € pour Johannesburg à Hoedspruit. Plus tu réserves tôt, plus les tarifs sont doux.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Comment se passe le paiement ?</summary>
+          <div class="rep">
+            <p>Un acompte de 40 %, versé à l'inscription, bloque ta place. Le solde se règle ensuite en trois versements, au plus tard le 30 mars 2027. Le paiement se fait en rands, à Nature Connexion, par virement bancaire ou via Wise. Tout est expliqué juste en dessous, dans la partie prix.</p>
+          </div>
+        </details>
+      </div>
+      <p class="faq-wa">Ta question manque ici ? <a class="wa" data-wa href="https://wa.me/33695681782" target="_blank" rel="noopener"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg><span>Écris-moi sur WhatsApp</span></a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     12. LE PRIX
+     ============================================================ -->
+<section class="ivoire fondu-haut" id="prix">
+  <div class="wrap">
+    <div class="lecture revele">
+      <p class="surtitre">L'investissement</p>
+      <h2>Ce que contient ton voyage.</h2>
+      <p class="chapo">Une fois à Hoedspruit, tu n'as plus rien à payer ni à organiser, à part un repas en ville et tes extras.</p>
+    </div>
+    <ul class="valeur revele">
+      <li>9 nuits dans trois lieux choisis</li>
+      <li>Tous les repas et boissons sans alcool</li>
+      <li>Marches guidées et safaris en 4x4</li>
+      <li>La rencontre des éléphants de HERD</li>
+      <li>Les vautours du Cap et le Blyde River Canyon</li>
+      <li>L'accompagnement H24 de Léa</li>
+      <li>Tous les transferts sur place</li>
+      <li>Trois appels de groupe en visio</li>
+      <li>Soutien francophone et holistique</li>
+    </ul>
+
+    <div class="avis-google revele">
+      <p class="avis-titre">Ce qu'elles en disent sur Google <span aria-hidden="true">★★★★★</span></p>
+      <p class="defile defile-avis" aria-hidden="true">Fais défiler pour lire les trois avis →</p>
+      <div class="avis-grille">
+        <button type="button" class="ouvre avis-zoom" data-galerie="avis" data-index="0" aria-label="Agrandir cet avis"><img src="images/avis/avis-marion.webp" width="900" height="775" loading="lazy" alt="Avis Google 5 étoiles de Marion : La Namibie ! Un voyage exceptionnel au cœur de la nature. Une organisation au top, campings confort, lodges de luxe, on se laisse porter. Léa et les guides sont aux petits soins. Une vie en groupe géniale et des moments seuls si on en a envie. Merci Léa pour cette belle découverte qui m'a apporté les réponses dont j'avais besoin pour avancer sur mon chemin."></button>
+        <button type="button" class="ouvre avis-zoom" data-galerie="avis" data-index="1" aria-label="Agrandir cet avis"><img src="images/avis/avis-nathalie.webp" width="900" height="603" loading="lazy" alt="Avis Google 5 étoiles de Nathalie : voyager avec Léa est plus qu'un voyage, c'est un voyage dans le voyage. Son lien avec l'Afrique, son contact avec les animaux, son énergie, son honnêteté, sa disponibilité et sa présence bienveillante font de ses stages et de ses voyages des moments ancrés dans nos cœurs."></button>
+        <button type="button" class="ouvre avis-zoom" data-galerie="avis" data-index="2" aria-label="Agrandir cet avis"><img src="images/avis/avis-aurore.webp" width="900" height="597" loading="lazy" alt="Avis Google 5 étoiles d'Aurore : une formation de qualité, complète et vivante, avec Léa toujours là pour répondre. Merci aussi pour les voyages en Afrique du Sud et en Namibie à tes côtés, c'était un régal. Vivement les prochains."></button>
+      </div>
+    </div>
+
+    <div class="formules">
+      <div class="formule revele">
+        <p class="nom">Chambre partagée à deux</p>
+        <p class="montant"><span data-eur="partage">5 555</span> €</p>
+        <p class="eur">par personne, tout compris sur place</p>
+        <p class="detail">Chambre partagée dans les deux lodges, lits séparés. Ta propre tente au camp de brousse les trois premières nuits.</p>
+        <p class="echeance">ou <span data-eur="acomptePartage">2 222</span> € à l'inscription, puis 3 versements de <span data-eur="versementPartage">1 111</span> €</p>
+        <p class="reste">3 places restantes dans cette formule</p>
+      </div>
+      <div class="formule vedette revele">
+        <p class="nom">Chambre individuelle</p>
+        <p class="montant"><span data-eur="individuel">6 125</span> €</p>
+        <p class="eur">par personne, tout compris sur place</p>
+        <p class="detail">Ta chambre rien qu'à toi dans les deux lodges, et ta propre tente au camp. <span data-eur="supplement">570</span> € de plus que la formule partagée.</p>
+        <p class="echeance">ou <span data-eur="acompteIndividuel">2 450</span> € à l'inscription, puis 3 versements de <span data-eur="versementIndividuel">1 225</span> €</p>
+        <p class="reste">2 places restantes dans cette formule</p>
+      </div>
+    </div>
+    <p class="taux">Les tarifs sont fixés en rands sud-africains : la somme finale peut varier légèrement selon le taux de change du jour.</p>
+
+    <div class="paiement">
+      <div class="revele">
+        <h3>L'acompte</h3>
+        <p>40 % pour bloquer ta place, soit <span data-eur="acomptePartage">2 222</span> € en chambre partagée ou <span data-eur="acompteIndividuel">2 450</span> € en individuelle. À verser à l'inscription. Les inscriptions restent ouvertes jusqu'à <span data-date-limite>fin février 2027</span>, dans la limite des places.</p>
+      </div>
+      <div class="revele">
+        <h3>Le solde en trois fois</h3>
+        <p>Le reste se règle en trois versements, au plus tard le 30 mars 2027 : <span data-eur="versementPartage">1 111</span> € par versement en chambre partagée, <span data-eur="versementIndividuel">1 225</span> € en individuelle. Tu avances à ton rythme.</p>
+      </div>
+      <div class="revele">
+        <h3>L'assurance annulation</h3>
+        <p>Obligatoire, elle te protège si la vie s'en mêle. Ta réservation est ferme : avec elle, tu pars l'esprit libre.</p>
+      </div>
+    </div>
+
+    <div class="encart revele">
+      <h3>Payer en rands en toute simplicité avec Wise</h3>
+      <ol>
+        <li>Tu ouvres un compte gratuit sur Wise depuis ton téléphone.</li>
+        <li>Tu y verses tes euros, Wise les convertit en rands au taux du jour avec des frais réduits.</li>
+        <li>Tu envoies le montant à Nature Connexion avec les coordonnées reçues après ton appel.</li>
+      </ol>
+      <p class="taux" style="margin-bottom:0">Un virement bancaire classique fonctionne aussi. Les frais bancaires restent à ta charge.</p>
+    </div>
+
+    <div class="inclus">
+      <div class="oui revele">
+        <p class="col-titre">Inclus</p>
+        <ul>
+          <li>Tous les hébergements, 9 nuits</li>
+          <li>Toutes les activités safari : marches et 4x4 avec guides</li>
+          <li>Tous les repas, l'eau et les boissons non alcoolisées</li>
+          <li>La visite de HERD et le brunch du 4 juin</li>
+          <li>La marche matinale et la rencontre des vautours du Cap</li>
+          <li>La balade en bateau sur le Blyde River Canyon</li>
+          <li>Activités bien-être au lodge de l'Olifants</li>
+          <li>Les frais de conservation de Balule et du Greater Kruger</li>
+          <li>Tous les transferts depuis et vers l'aéroport de Hoedspruit, entre les lieux et pour les activités</li>
+          <li>Deux appels en visio avec le groupe avant le départ</li>
+          <li>Un appel en visio trois semaines après le retour</li>
+          <li>Le groupe WhatsApp du voyage</li>
+          <li>Les pourboires de base</li>
+          <li>Mon accompagnement du premier au dernier jour</li>
+          <li>Les audios « Les voix du sauvage » et ton carnet de terrain intérieur</li>
+        </ul>
+      </div>
+      <div class="non revele">
+        <p class="col-titre">Non inclus</p>
+        <ul>
+          <li>Les vols internationaux et le vol Johannesburg à Hoedspruit</li>
+          <li>L'assurance voyage obligatoire : médicale, annulation, rapatriement</li>
+          <li>Un repas en ville le 3 juin</li>
+          <li>Les boissons alcoolisées</li>
+          <li>Les soins au spa</li>
+          <li>Les activités non décrites ici</li>
+          <li>Les pourboires supplémentaires</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="budget revele">
+      <p><strong>Ton budget total, vols compris.</strong> Compte environ 650 à 1 000 € pour l'aller-retour Paris à Johannesburg en juin, et 200 à 350 € pour le vol Johannesburg à Hoedspruit. Avec le voyage, cela représente autour de 7 000 €, hors assurance et dépenses personnelles.</p>
+      <p class="total">≈ 7 000 €</p>
+    </div>
+
+    <div class="print-only qr-appel"><img src="images/qr/appel.svg" width="120" height="120" alt="QR code pour réserver ton appel découverte"><p><strong>Réserve ton appel découverte</strong><br>Scanne le code ou va sur<br><a href="https://calendly.com/instinctiva/appel-decouverte-safari-afrique-du-sud">calendly.com/instinctiva/appel-decouverte-safari-afrique-du-sud</a></p></div>
+    <div class="cta-bloc revele">
+      <a class="btn" data-appel href="#etape">Réserve ton appel découverte</a>
+      <p class="cta-note"><strong><span data-places>5</span> places disponibles sur <span data-total>7</span>.</strong> <span data-inscrites-phrase>Sandra et Marilyn ont déjà réservé leur place.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     13. LA PROCHAINE ÉTAPE
+     ============================================================ -->
+<section class="nuit fond-flou" id="etape" style="--flou:url(images/lea-bras-ouverts.webp)">
+  <div class="wrap">
+    <div class="lecture revele">
+      <p class="surtitre">La prochaine étape</p>
+      <h2>On se parle, et tu sauras.</h2>
+      <p class="chapo">L'appel est gratuit et sans engagement. On prend tout le temps qu'il faut pour vérifier ensemble que ce voyage te correspond.</p>
+    </div>
+    <ol class="etapes">
+      <li class="revele"><h3>On se parle</h3><p>Au téléphone ou en visio, le temps qu'il faut. Tu me poses toutes tes questions, je te pose les miennes, et on sent ensemble si c'est juste pour toi.</p></li>
+      <li class="revele"><h3>Tu t'inscris</h3><p>Si c'est un oui de part et d'autre, Nature Connexion t'envoie le bulletin d'inscription et les coordonnées de paiement.</p></li>
+      <li class="revele"><h3>Ta place est à toi</h3><p>Tu verses l'acompte de 40 % à l'inscription : ta place dans le groupe est confirmée, et tu reçois tous les documents. Le solde suit en trois versements.</p></li>
+    </ol>
+    <div class="cta-bloc revele">
+      <a class="btn" data-appel href="#etape">Réserve ton appel découverte</a>
+      <a class="btn btn-wa" data-wa href="https://wa.me/33695681782" target="_blank" rel="noopener"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg><span>Écris-moi sur WhatsApp</span></a>
+      <p class="cta-note"><span data-places>5</span> places disponibles sur <span data-total>7</span> · Inscriptions jusqu'à <span data-date-limite>fin février 2027</span></p>
+    </div>
+    <div class="print-only qr-appel"><img src="images/qr/appel.svg" width="120" height="120" alt="QR code pour réserver ton appel découverte"><p><strong>Réserve ton appel découverte</strong><br>Scanne le code ou va sur<br><a href="https://calendly.com/instinctiva/appel-decouverte-safari-afrique-du-sud">calendly.com/instinctiva/appel-decouverte-safari-afrique-du-sud</a></p></div>
+    <p data-appel-manquant style="margin-top:14px"><span class="todo">[À FOURNIR : lien Calendly de l'appel découverte]</span></p>
+
+    <div class="lettre">
+      <img class="paysage revele" src="images/lea-bras-ouverts.webp" width="2000" height="1500" loading="lazy" alt="Léa, bras ouverts, face au soleil couchant dans la savane.">
+      <div class="revele">
+        <p>Si tu as lu jusqu'ici, c'est que l'appel est là. Je le connais bien, cet appel. Il revient chaque fois qu'on le fait taire, plus têtu, plus profond aussi.</p>
+        <p>Pendant des années, tu as donné à tout le monde. Ton temps, ton énergie, ton attention. Ce voyage, je l'ai pensé pour que tu reçoives enfin à ton tour ce dont tu as besoin : l'air froid de l'aube, le regard d'un éléphant, la chaleur du feu, la présence d'autres personnes qui te comprennent sans que tu aies à tout expliquer.</p>
+        <p>L'Afrique te secoue et, dans le même geste, elle te porte. Elle te rend à toi-même, et c'est pour te permettre de vivre cette magie que je souhaite t'y guider. J'ai hâte de vivre ça à tes côtés.</p>
+        <p class="signature">Léa</p>
+      </div>
+    </div>
+
+    <div class="brochure lecture revele">
+      <h3>Besoin de temps avant d'appeler ?</h3>
+      <p>Télécharge la brochure complète en PDF pour la lire tranquillement, et la partager avec tes proches.</p>
+      <p><a class="lien" data-brochure href="#" target="_blank" rel="noopener">Télécharger la brochure</a> <span class="todo" data-brochure-manquante>[À FOURNIR : lien Drive de la brochure]</span></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="marque-pied"><span class="logo" aria-hidden="true"></span>Instinctiva</span>
+    <span>Voyage conçu et accompagné par Léa Gutierrez · Logistique Nature Connexion</span>
+    <span>Photos © Instinctiva &amp; Partenaires · photos des lieux © leurs propriétaires</span>
+  </div>
+</footer>
+
+<dialog class="visionneuse" id="visionneuse" aria-label="Galerie photos">
+  <div class="v-haut"><span id="v-titre"></span><span><span id="v-num"></span>&nbsp;&nbsp;<button type="button" class="v-btn" id="v-fermer" aria-label="Fermer la galerie">×</button></span></div>
+  <div class="v-scene" id="v-scene">
+    <button type="button" class="v-btn v-prec" id="v-prec" aria-label="Photo précédente">‹</button>
+    <img id="v-img" alt="">
+    <button type="button" class="v-btn v-suiv" id="v-suiv" aria-label="Photo suivante">›</button>
+  </div>
+  <p class="v-legende" id="v-legende"></p>
+</dialog>
+<script type="application/json" id="galeries-data">{"camp": [{"src": "images/galeries/camp/camp-01.webp", "alt": "Une tente de toile éclairée à la tombée de la nuit, lanternes posées au sol."}, {"src": "images/galeries/camp/camp-02.webp", "alt": "Intérieur d'une tente : un vrai lit fait de draps blancs."}, {"src": "images/galeries/camp/camp-03.webp", "alt": "La douche en plein air, un seau suspendu à un trépied face à la rivière."}, {"src": "images/galeries/camp/camp-04.webp", "alt": "Les voyageurs réunis autour du feu de camp à la tombée du jour."}, {"src": "images/galeries/camp/camp-05.webp", "alt": "Dîner aux lanternes au bord de la rivière, le feu allumé tout près."}, {"src": "images/galeries/camp/camp-06.webp", "alt": "À l'aube, un guide ranime le feu du camp."}, {"src": "images/galeries/camp/camp-07.webp", "alt": "La bouilloire chauffe sur les braises pour le café du matin."}, {"src": "images/galeries/camp/camp-08.webp", "alt": "Deux guides armés au bord de l'eau, au lever du soleil."}, {"src": "images/galeries/camp/camp-09.webp", "alt": "Les guides lisent les traces au sol pendant la marche."}, {"src": "images/galeries/camp/camp-10.webp", "alt": "Apéritif au coucher du soleil, au bord de la table du camp."}, {"src": "images/galeries/camp/camp-11.webp", "alt": "Une tente posée sous les grands arbres, face à la rivière."}, {"src": "images/galeries/camp/camp-12.webp", "alt": "La Voie lactée au-dessus du camp, le feu brille au loin."}, {"src": "images/galeries/camp/camp-13.webp", "alt": "Le camp à la nuit tombée, tentes et 4x4 éclairés par les lanternes."}], "eco": [{"src": "images/galeries/eco/eco-01.webp", "alt": "Une tente suite sur sa plateforme en bois, au coucher du soleil."}, {"src": "images/galeries/eco/eco-02.webp", "alt": "Intérieur de la tente suite : lit à baldaquin et moustiquaire."}, {"src": "images/galeries/eco/eco-03.webp", "alt": "La douche extérieure, ouverte sur la falaise."}, {"src": "images/galeries/eco/eco-04.webp", "alt": "Lits jumeaux sous la moustiquaire, dans une tente suite."}, {"src": "images/galeries/eco/eco-05.webp", "alt": "La grande terrasse en bois du lodge, salons ouverts sur la brousse."}, {"src": "images/galeries/eco/eco-06.webp", "alt": "Le bâtiment principal du lodge illuminé au crépuscule."}, {"src": "images/galeries/eco/eco-07.webp", "alt": "Dîner en brousse autour d'un grand feu, tables dressées sous les étoiles."}, {"src": "images/galeries/eco/eco-08.webp", "alt": "Table dressée pour le dîner, bougies et tissus africains."}, {"src": "images/galeries/eco/eco-09.webp", "alt": "Un salon en plein air à l'ombre d'un grand arbre."}, {"src": "images/galeries/eco/eco-10.webp", "alt": "Deux vautours du Cap, photographiés au lodge."}, {"src": "images/galeries/eco/eco-11.webp", "alt": "Des vautours du Cap rassemblés sur le site de nourrissage."}, {"src": "images/galeries/eco/eco-12.webp", "alt": "Embarquement pour la balade en bateau sur le Blyde River Canyon."}, {"src": "images/galeries/eco/eco-13.webp", "alt": "Les falaises et les rives du Blyde River Canyon."}], "olifants": [{"src": "images/galeries/olifants/olifants-01.webp", "alt": "Une femme médite sur un rocher qui surplombe la rivière Olifants."}, {"src": "images/galeries/olifants/olifants-02.webp", "alt": "Une suite lumineuse ouverte sur la rivière."}, {"src": "images/galeries/olifants/olifants-03.webp", "alt": "Séance de yoga sur la terrasse en bois, face à la brousse."}, {"src": "images/galeries/olifants/olifants-04.webp", "alt": "Marche guidée le long de la rivière."}, {"src": "images/galeries/olifants/olifants-05.webp", "alt": "Une suite au toit de chaume, grande baie vitrée sur la nature."}, {"src": "images/galeries/olifants/olifants-06.webp", "alt": "Une chambre chaleureuse aux tissus colorés."}, {"src": "images/galeries/olifants/olifants-07.webp", "alt": "Le pavillon du spa, niché dans la végétation."}, {"src": "images/galeries/olifants/olifants-08.webp", "alt": "Méditation dans les herbes hautes, au soleil couchant."}, {"src": "images/galeries/olifants/olifants-09.webp", "alt": "Coucher de soleil sur la brousse qui s'étend jusqu'à l'horizon."}, {"src": "images/galeries/olifants/olifants-10.webp", "alt": "Safari en 4x4 ouvert dans la lumière dorée du soir."}, {"src": "images/galeries/olifants/olifants-11.webp", "alt": "Un pygargue vocifère en plein vol au-dessus des arbres."}, {"src": "images/galeries/olifants/olifants-12.webp", "alt": "Un lycaon, chien sauvage d'Afrique, regarde l'objectif."}, {"src": "images/galeries/olifants/olifants-13.webp", "alt": "La Voie lactée dans le ciel de la réserve."}]}</script>
+
+<div class="collant" id="collant" aria-hidden="true">
+  <span><span data-places>5</span> places sur <span data-total>7</span></span>
+  <a class="btn" data-appel href="#etape" tabindex="-1">Réserver mon appel</a>
+</div>
+
+<script>
+/* ================================================================
+   RÉGLAGES · tout ce qui change souvent se modifie ici, en une ligne.
+   ================================================================ */
+const CONFIG = {
+  placesRestantes: 5,              // places disponibles
+  placesTotal: 7,
+  lienAppel: "https://calendly.com/instinctiva/appel-decouverte-safari-afrique-du-sud",   // lien Calendly de l'appel découverte
+  prixPartageEur: 5555,            // prix d'appel en euros, chambre partagée
+  prixIndividuelEur: 6125,         // prix en euros, chambre individuelle
+  dateLimiteInscriptions: "fin février 2027",
+  inscrites: ["Sandra", "Marilyn"],            // prénoms des voyageuses déjà inscrites
+  whatsapp: "33695681782",                      // numéro WhatsApp de Léa, format international sans +
+  messageWhatsapp: "Bonjour Léa, j'ai une question sur le safari en Afrique du Sud.",
+  dateBonus: "15 janvier 2027", dateBonusISO: "2027-01-15",   // bonus « premières inscrites »
+  ga4Id: "",                                    // TODO : identifiant Google Analytics 4 (G-XXXXXXX)
+  metaPixelId: "",                              // TODO : identifiant du pixel Meta (Facebook / Instagram)
+  lienBrochure: "https://drive.google.com/file/d/1tu3cAv_DCfmZ7PP2g84BnF5LugkkJLqo/view"   // lien de partage Google Drive du PDF
+};
+
+(function () {
+  const $$ = (s) => document.querySelectorAll(s);
+  const fr = (n) => n.toLocaleString("fr-FR").replace(/ | /g, " ");
+  const eur = (n) => Math.round(n);
+
+  const v = {
+    partage: eur(CONFIG.prixPartageEur),
+    individuel: eur(CONFIG.prixIndividuelEur),
+    acomptePartage: eur(CONFIG.prixPartageEur * 0.4),
+    acompteIndividuel: eur(CONFIG.prixIndividuelEur * 0.4),
+    versementPartage: eur(CONFIG.prixPartageEur * 0.6 / 3),
+    versementIndividuel: eur(CONFIG.prixIndividuelEur * 0.6 / 3)
+  };
+  v.supplement = v.individuel - v.partage;
+  $$("[data-eur]").forEach((el) => { const k = el.dataset.eur; if (v[k] != null) el.textContent = fr(v[k]); });
+  $$("[data-places]").forEach((el) => el.textContent = CONFIG.placesRestantes);
+  $$("[data-total]").forEach((el) => el.textContent = CONFIG.placesTotal);
+  $$("[data-date-limite]").forEach((el) => el.textContent = CONFIG.dateLimiteInscriptions);
+
+  if (CONFIG.lienAppel) {
+    $$("[data-appel]").forEach((a) => { a.href = CONFIG.lienAppel; a.target = "_blank"; a.rel = "noopener"; });
+    $$("[data-appel-manquant]").forEach((el) => el.remove());
+  }
+
+  if (CONFIG.lienBrochure) {
+    $$("[data-brochure]").forEach((a) => a.href = CONFIG.lienBrochure);
+    $$("[data-brochure-manquante]").forEach((el) => el.hidden = true);
+  } else {
+    $$("[data-brochure]").forEach((a) => a.hidden = true);
+  }
+
+  // Voyageuses déjà inscrites
+  const noms = CONFIG.inscrites || [];
+  $$("[data-inscrites-phrase]").forEach((el) => {
+    if (!noms.length) { el.hidden = true; return; }
+    const liste = noms.length === 1 ? noms[0] : noms.slice(0, -1).join(", ") + " et " + noms[noms.length - 1];
+    el.textContent = liste + (noms.length === 1 ? " a déjà réservé sa place." : " ont déjà réservé leur place.");
+  });
+  // Bonus « premières inscrites » : disparaît après la date
+  $$("[data-date-bonus]").forEach((el) => el.textContent = CONFIG.dateBonus);
+  if (CONFIG.dateBonusISO && new Date() > new Date(CONFIG.dateBonusISO + "T23:59:59")) $$("[data-bonus-tot]").forEach((el) => el.hidden = true);
+  // WhatsApp
+  if (CONFIG.whatsapp) {
+    const wa = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(CONFIG.messageWhatsapp || "");
+    $$("[data-wa]").forEach((a) => a.href = wa);
+  } else $$("[data-wa]").forEach((a) => a.hidden = true);
+  // Mesure d'audience (Google Analytics 4, pixel Meta) : seulement après accord
+  const mesure = { ok: false };
+  const suivre = (ga, fb) => {
+    if (!mesure.ok) return;
+    if (window.gtag && ga) gtag("event", ga);
+    if (window.fbq && fb) fbq("track", fb);
+  };
+  const charger = () => {
+    if (mesure.ok) return; mesure.ok = true;
+    if (CONFIG.ga4Id) {
+      const s = document.createElement("script"); s.async = true;
+      s.src = "https://www.googletagmanager.com/gtag/js?id=" + CONFIG.ga4Id; document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || []; window.gtag = function () { dataLayer.push(arguments); };
+      gtag("js", new Date()); gtag("config", CONFIG.ga4Id);
+    }
+    if (CONFIG.metaPixelId) {
+      !function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = "2.0"; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v;
+        s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+      fbq("init", CONFIG.metaPixelId); fbq("track", "PageView");
+    }
+  };
+  if (CONFIG.ga4Id || CONFIG.metaPixelId) {
+    let choix = null; try { choix = localStorage.getItem("mesure-safari"); } catch (e) {}
+    if (choix === "oui") charger();
+    else if (choix !== "non" && !document.documentElement.classList.contains("pdf")) {
+      const b = document.createElement("div"); b.className = "consentement"; b.setAttribute("role", "dialog"); b.setAttribute("aria-label", "Mesure d'audience");
+      b.innerHTML = '<p>J\'utilise une mesure d\'audience pour savoir comment cette page est trouvée et lue. Tu es d\'accord ?</p><button type="button" data-c="oui">Accepter</button><button type="button" data-c="non">Refuser</button>';
+      b.addEventListener("click", (e) => { const c = e.target.dataset && e.target.dataset.c; if (!c) return;
+        try { localStorage.setItem("mesure-safari", c); } catch (err) {} if (c === "oui") charger(); b.hidden = true; });
+      document.body.appendChild(b);
+    }
+  }
+  $$("[data-appel]").forEach((a) => a.addEventListener("click", () => suivre("reserver_appel", "Lead")));
+  $$("[data-wa]").forEach((a) => a.addEventListener("click", () => suivre("whatsapp", "Contact")));
+  $$("[data-brochure]").forEach((a) => a.addEventListener("click", () => suivre("brochure", "ViewContent")));
+
+  // Galeries plein écran des lieux
+  const DATA = JSON.parse(document.getElementById("galeries-data").textContent);
+  const TITRES = { camp: "Le camp de brousse", eco: "L'éco-lodge des vautours", olifants: "Le lodge de l'Olifants", avis: "Avis Google" };
+  DATA.avis = [...document.querySelectorAll(".avis-grille img")].map((i) => ({ src: i.getAttribute("src"), alt: i.alt, leg: "" }));
+  const dlg = document.getElementById("visionneuse");
+  const vImg = document.getElementById("v-img"), vLeg = document.getElementById("v-legende");
+  const vNum = document.getElementById("v-num"), vTitre = document.getElementById("v-titre");
+  let cur = [], idx = 0, retour = null;
+  const montre = (i) => {
+    idx = (i + cur.length) % cur.length;
+    vImg.src = cur[idx].src; vImg.alt = cur[idx].alt;
+    vLeg.textContent = cur[idx].leg !== undefined ? cur[idx].leg : cur[idx].alt; vNum.textContent = (idx + 1) + " / " + cur.length;
+    const suiv = cur[(idx + 1) % cur.length]; if (suiv) { const p = new Image(); p.src = suiv.src; }
+  };
+  $$(".ouvre").forEach((b) => b.addEventListener("click", () => {
+    cur = DATA[b.dataset.galerie] || []; if (!cur.length) return;
+    retour = b; vTitre.textContent = TITRES[b.dataset.galerie] || "";
+    montre(+b.dataset.index || 0);
+    if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
+  }));
+  const ferme = () => { if (dlg.close) dlg.close(); else dlg.removeAttribute("open"); };
+  dlg.addEventListener("close", () => { if (retour) retour.focus(); });
+  document.getElementById("v-fermer").addEventListener("click", ferme);
+  document.getElementById("v-prec").addEventListener("click", () => montre(idx - 1));
+  document.getElementById("v-suiv").addEventListener("click", () => montre(idx + 1));
+  dlg.addEventListener("keydown", (e) => { if (e.key === "ArrowRight") montre(idx + 1); if (e.key === "ArrowLeft") montre(idx - 1); });
+  dlg.addEventListener("click", (e) => { if (e.target === dlg || e.target.id === "v-scene") ferme(); });
+  let x0 = null;
+  const scene = document.getElementById("v-scene");
+  scene.addEventListener("touchstart", (e) => { x0 = e.touches[0].clientX; }, { passive: true });
+  scene.addEventListener("touchend", (e) => { if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 40) montre(idx + (dx < 0 ? 1 : -1)); x0 = null; });
+
+  // Mode brochure : ?pdf (impression de la brochure)
+  if (/[?&]pdf\b/.test(location.search) || matchMedia("print").matches) document.documentElement.classList.add("pdf");
+  const preparePdf = () => {
+    $$("details").forEach((d) => d.open = true);
+    $$("img[loading=lazy]").forEach((i) => i.loading = "eager");
+    const versPdf = (s) => s.replace(/^images\/(.+)\.webp$/, "images/pdf/$1.jpg");
+    $$("picture source").forEach((s) => s.srcset = versPdf(s.getAttribute("srcset") || ""));
+    $$("img").forEach((i) => { const s = i.getAttribute("src") || ""; if (s.endsWith(".webp")) i.src = versPdf(s); });
+    $$(".revele").forEach((e) => e.classList.add("vu"));
+    if (!document.querySelector(".planche")) {
+      const D = JSON.parse(document.getElementById("galeries-data").textContent);
+      $$(".lieu-media").forEach((m) => {
+        const b = m.querySelector("[data-galerie]"); if (!b) return;
+        const g = D[b.dataset.galerie] || [];
+        const p = document.createElement("div"); p.className = "planche print-only";
+        g.slice(4, 10).forEach((x) => { const im = new Image(); im.src = x.src.replace(/^images\/(.+)\.webp$/, "images/pdf/$1.jpg"); im.alt = x.alt; p.appendChild(im); });
+        m.closest(".lieu-bloc").appendChild(p);
+      });
+    }
+  };
+  if (document.documentElement.classList.contains("pdf")) preparePdf();
+  window.addEventListener("beforeprint", preparePdf);
+
+  // Apparition douce au défilement
+  const io = "IntersectionObserver" in window ? new IntersectionObserver((es) => {
+    es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("vu"); io.unobserve(e.target); } });
+  }, { rootMargin: "0px 0px -8% 0px" }) : null;
+  $$(".revele").forEach((el) => io ? io.observe(el) : el.classList.add("vu"));
+
+  // Bouton collant mobile : visible après le héros, caché sur la dernière section
+  const collant = document.getElementById("collant");
+  const hero = document.getElementById("haut");
+  const fin = document.getElementById("etape");
+  let heroVu = true, finVu = false;
+  const maj = () => { const on = !heroVu && !finVu; collant.classList.toggle("visible", on); collant.setAttribute("aria-hidden", on ? "false" : "true"); collant.querySelector("a").tabIndex = on ? 0 : -1; };
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(([e]) => { heroVu = e.isIntersecting; maj(); }).observe(hero);
+    new IntersectionObserver(([e]) => { finVu = e.isIntersecting; maj(); }).observe(fin);
+  }
+})();
+</script>
+</body>
+</html>

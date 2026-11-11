@@ -1,0 +1,242 @@
+{
+ "camp": [
+  {
+   "src": "images/galeries/camp/camp-01.webp",
+   "w": 1200,
+   "h": 800,
+   "alt": "Une tente de toile éclairée à la tombée de la nuit, lanternes posées au sol."
+  },
+  {
+   "src": "images/galeries/camp/camp-02.webp",
+   "w": 1200,
+   "h": 800,
+   "alt": "Intérieur d'une tente : un vrai lit fait de draps blancs."
+  },
+  {
+   "src": "images/galeries/camp/camp-03.webp",
+   "w": 1200,
+   "h": 800,
+   "alt": "La douche en plein air, un seau suspendu à un trépied face à la rivière."
+  },
+  {
+   "src": "images/galeries/camp/camp-04.webp",
+   "w": 1200,
+   "h": 800,
+   "alt": "Les voyageurs réunis autour du feu de camp à la tombée du jour."
+  },
+  {
+   "src": "images/galeries/camp/camp-05.webp",
+   "w": 1600,
+   "h": 1065,
+   "alt": "Dîner aux lanternes au bord de la rivière, le feu allumé tout près."
+  },
+  {
+   "src": "images/galeries/camp/camp-06.webp",
+   "w": 1200,
+   "h": 800,
+   "alt": "À l'aube, un guide ranime le feu du camp."
+  },
+  {
+   "src": "images/galeries/camp/camp-07.webp",
+   "w": 1200,
+   "h": 800,
+   "alt": "La bouilloire chauffe sur les braises pour le café du matin."
+  },
+  {
+   "src": "images/galeries/camp/camp-08.webp",
+   "w": 1200,
+   "h": 800,
+   "alt": "Deux guides armés au bord de l'eau, au lever du soleil."
+  },
+  {
+   "src": "images/galeries/camp/camp-09.webp",
+   "w": 1200,
+   "h": 800,
+   "alt": "Les guides lisent les traces au sol pendant la marche."
+  },
+  {
+   "src": "images/galeries/camp/camp-10.webp",
+   "w": 1200,
+   "h": 800,
+   "alt": "Apéritif au coucher du soleil, au bord de la table du camp."
+  },
+  {
+   "src": "images/galeries/camp/camp-11.webp",
+   "w": 1200,
+   "h": 800,
+   "alt": "Une tente posée sous les grands arbres, face à la rivière."
+  },
+  {
+   "src": "images/galeries/camp/camp-12.webp",
+   "w": 1200,
+   "h": 800,
+   "alt": "La Voie lactée au-dessus du camp, le feu brille au loin."
+  },
+  {
+   "src": "images/galeries/camp/camp-13.webp",
+   "w": 1200,
+   "h": 800,
+   "alt": "Le camp à la nuit tombée, tentes et 4x4 éclairés par les lanternes."
+  }
+ ],
+ "eco": [
+  {
+   "src": "images/galeries/eco/eco-01.webp",
+   "w": 1400,
+   "h": 934,
+   "alt": "Une tente suite sur sa plateforme en bois, au coucher du soleil."
+  },
+  {
+   "src": "images/galeries/eco/eco-02.webp",
+   "w": 1400,
+   "h": 934,
+   "alt": "Intérieur de la tente suite : lit à baldaquin et moustiquaire."
+  },
+  {
+   "src": "images/galeries/eco/eco-03.webp",
+   "w": 1400,
+   "h": 934,
+   "alt": "La douche extérieure, ouverte sur la falaise."
+  },
+  {
+   "src": "images/galeries/eco/eco-04.webp",
+   "w": 1400,
+   "h": 1174,
+   "alt": "Lits jumeaux sous la moustiquaire, dans une tente suite."
+  },
+  {
+   "src": "images/galeries/eco/eco-05.webp",
+   "w": 1400,
+   "h": 934,
+   "alt": "La grande terrasse en bois du lodge, salons ouverts sur la brousse."
+  },
+  {
+   "src": "images/galeries/eco/eco-06.webp",
+   "w": 1400,
+   "h": 934,
+   "alt": "Le bâtiment principal du lodge illuminé au crépuscule."
+  },
+  {
+   "src": "images/galeries/eco/eco-07.webp",
+   "w": 1400,
+   "h": 934,
+   "alt": "Dîner en brousse autour d'un grand feu, tables dressées sous les étoiles."
+  },
+  {
+   "src": "images/galeries/eco/eco-08.webp",
+   "w": 1400,
+   "h": 934,
+   "alt": "Table dressée pour le dîner, bougies et tissus africains."
+  },
+  {
+   "src": "images/galeries/eco/eco-09.webp",
+   "w": 1400,
+   "h": 844,
+   "alt": "Un salon en plein air à l'ombre d'un grand arbre."
+  },
+  {
+   "src": "images/galeries/eco/eco-10.webp",
+   "w": 1400,
+   "h": 934,
+   "alt": "Deux vautours du Cap, photographiés au lodge."
+  },
+  {
+   "src": "images/galeries/eco/eco-11.webp",
+   "w": 1400,
+   "h": 934,
+   "alt": "Des vautours du Cap rassemblés sur le site de nourrissage."
+  },
+  {
+   "src": "images/galeries/eco/eco-12.webp",
+   "w": 1400,
+   "h": 935,
+   "alt": "Embarquement pour la balade en bateau sur le Blyde River Canyon."
+  },
+  {
+   "src": "images/galeries/eco/eco-13.webp",
+   "w": 1400,
+   "h": 935,
+   "alt": "Les falaises et les rives du Blyde River Canyon."
+  }
+ ],
+ "olifants": [
+  {
+   "src": "images/galeries/olifants/olifants-01.webp",
+   "w": 1600,
+   "h": 1067,
+   "alt": "Une femme médite sur un rocher qui surplombe la rivière Olifants."
+  },
+  {
+   "src": "images/galeries/olifants/olifants-02.webp",
+   "w": 1600,
+   "h": 1067,
+   "alt": "Une suite lumineuse ouverte sur la rivière."
+  },
+  {
+   "src": "images/galeries/olifants/olifants-03.webp",
+   "w": 1024,
+   "h": 683,
+   "alt": "Séance de yoga sur la terrasse en bois, face à la brousse."
+  },
+  {
+   "src": "images/galeries/olifants/olifants-04.webp",
+   "w": 1024,
+   "h": 683,
+   "alt": "Marche guidée le long de la rivière."
+  },
+  {
+   "src": "images/galeries/olifants/olifants-05.webp",
+   "w": 1600,
+   "h": 1067,
+   "alt": "Une suite au toit de chaume, grande baie vitrée sur la nature."
+  },
+  {
+   "src": "images/galeries/olifants/olifants-06.webp",
+   "w": 1600,
+   "h": 1067,
+   "alt": "Une chambre chaleureuse aux tissus colorés."
+  },
+  {
+   "src": "images/galeries/olifants/olifants-07.webp",
+   "w": 1024,
+   "h": 683,
+   "alt": "Le pavillon du spa, niché dans la végétation."
+  },
+  {
+   "src": "images/galeries/olifants/olifants-08.webp",
+   "w": 1024,
+   "h": 683,
+   "alt": "Méditation dans les herbes hautes, au soleil couchant."
+  },
+  {
+   "src": "images/galeries/olifants/olifants-09.webp",
+   "w": 1600,
+   "h": 1066,
+   "alt": "Coucher de soleil sur la brousse qui s'étend jusqu'à l'horizon."
+  },
+  {
+   "src": "images/galeries/olifants/olifants-10.webp",
+   "w": 1024,
+   "h": 968,
+   "alt": "Safari en 4x4 ouvert dans la lumière dorée du soir."
+  },
+  {
+   "src": "images/galeries/olifants/olifants-11.webp",
+   "w": 819,
+   "h": 1024,
+   "alt": "Un pygargue vocifère en plein vol au-dessus des arbres."
+  },
+  {
+   "src": "images/galeries/olifants/olifants-12.webp",
+   "w": 1496,
+   "h": 1500,
+   "alt": "Un lycaon, chien sauvage d'Afrique, regarde l'objectif."
+  },
+  {
+   "src": "images/galeries/olifants/olifants-13.webp",
+   "w": 717,
+   "h": 1024,
+   "alt": "La Voie lactée dans le ciel de la réserve."
+  }
+ ]
+}
